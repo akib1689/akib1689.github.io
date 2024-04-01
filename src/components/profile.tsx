@@ -1,9 +1,6 @@
 // file to hold the left portion of the profile page
 
 import * as React from 'react';
-
-import { AspectRatio } from './ui/aspect-ratio';
-import Image from "next/image";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 
 
