@@ -9,7 +9,6 @@ export default function Home() {
       <div>
         <ProfileLeft />
       </div>
-      <Button>Click me</Button>
       <ModeToggle />
     </main>
   );
