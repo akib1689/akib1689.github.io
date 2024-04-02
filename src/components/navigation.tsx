@@ -6,7 +6,7 @@ import { MobileMenubar } from "./mobile-nav";
   
 
 export function MenubarComponent() {
-    const isDesktop = useMediaQuery("(min-width: 768px)")
+    const isDesktop = useMediaQuery("(min-width: 1208px)")
 
     return (
         isDesktop ? (

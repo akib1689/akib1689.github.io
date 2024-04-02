@@ -50,7 +50,7 @@ export function ProfileLeft() {
     // get the current theme
     const { theme } = useTheme();
     return (
-        <Card className="left-0 sm:w-full md:w-[500px] h-full flex flex-col p-3 border-none">
+        <Card className="left-0 top-0 sm:w-full md:w-[500px] h-fit max-h-max flex flex-col p-3 border-none overflow-y-auto">
             <div className='flex justify-center p-3'>
                 <Avatar className='w-48 h-48 border'>
                     <AvatarImage src="/images/profile_img.jpg" />
