@@ -47,7 +47,7 @@ const {
 
 export function ProfileLeft() {
   return (
-    <Card className="sm:w-full md:w-[350px] flex flex-col p-3 border-none">
+    <Card className="left-0 sm:w-full md:w-[400px] flex flex-col p-3 border-none">
         <div className='flex justify-center p-3'>
             <Avatar className='w-48 h-48 border'>
                 <AvatarImage src="/images/profile_img.jpg" />
@@ -130,6 +130,29 @@ export function ProfileLeft() {
                     <Badge >MongoDB</Badge>
                     <Badge >Firebase</Badge>
                     <Badge >PostgreSQL</Badge>
+                </div>
+            </div>
+            <div className='flex flex-col'>
+                <p className='font-medium my-2'>
+                    • DevOps
+                </p>
+                <div className='flex flex-wrap gap-1'>
+                    <Badge >Docker</Badge>
+                    <Badge >Kubernetes</Badge>
+                    <Badge >Jenkins</Badge>
+                    <Badge >GitHub Actions</Badge>
+                </div>
+            </div>
+            <div className='flex flex-col'>
+                <p className='font-medium my-2'>
+                    • Test tools
+                </p>
+                <div className='flex flex-wrap gap-1'>
+                    <Badge >Jest</Badge>
+                    <Badge >JUnit</Badge>
+                    <Badge >Postman</Badge>
+                    <Badge >Selenuim</Badge>
+                    <Badge >Cypress</Badge>
                 </div>
             </div>
         </div>
