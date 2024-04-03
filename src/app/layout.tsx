@@ -4,6 +4,7 @@ import "../styles/globals.css";
 
 import { ThemeProvider } from "@/components/theme-provider";
 import { MenubarComponent } from "@/components/navigation";
+import { ProfileLeft } from "@/components/left-profile-component";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,7 +19,6 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
     <html lang="en" suppressHydrationWarning>
       <head />
       <body>
@@ -31,12 +31,16 @@ export default function RootLayout({
           <section className="pt-8 px-4">
             <MenubarComponent />
           </section>
-          <main >
+          <div className="flex flex-col md:flex-row py-6 px-3">
+          <div>
+            <ProfileLeft />
+          </div>
+          <main className="p-6">
             {children}
           </main>
+          </div>
         </ThemeProvider>
       </body>
     </html>
-  </>
   );
 }

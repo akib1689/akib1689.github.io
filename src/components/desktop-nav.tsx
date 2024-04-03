@@ -22,7 +22,7 @@ import { Button } from "./ui/button";
 import { DownloadIcon } from "@radix-ui/react-icons";
 import { ModeToggle } from "./mode-toggle";
 
-import SvgComponent from "../../public/logo";
+import Logo from "../../public/logo";
 
 
 export function DesktopMenubar() {
@@ -32,7 +32,7 @@ export function DesktopMenubar() {
         <div className="w-full flex flex-grow">
             <div className="w-full pl-10">
                 
-                <SvgComponent fill="#fff" className=" h-8 w-auto"/>
+                <Logo fill="#fff" className=" h-8 w-auto"/>
                     
             </div>
             <NavigationMenu className=" justify-end pr-12">
@@ -51,10 +51,6 @@ export function DesktopMenubar() {
                     </NavigationMenuItem>
                 ))}
                 </NavigationMenuList>
-                <Button className="flex mx-4 space-x-2">
-                    <DownloadIcon className="h-5 w-5" />
-                    <span className="ml-2">Resume</span>
-                </Button>
                 <ModeToggle />
             </NavigationMenu>
         </div>

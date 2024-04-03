@@ -11,11 +11,10 @@ import {
 } from "@/components/ui/sheet"
 
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import { Button } from "./ui/button";
 import { menuList } from "@/lib/menu-list";
-import { DownloadIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-
+import Logo from "../../public/logo";
+import DownloadCv from "./download-cv";
 
 export function MobileMenubar() {
     const [selectedItem, setSelectedItem] = useState(menuList[0].name);
@@ -32,9 +31,11 @@ export function MobileMenubar() {
     return (
       <>
         <Sheet>
-          <SheetTrigger className="flex justify-between items-center p-3">
-            <div className="w-6"></div>
-            <h2 className="text-center">{currentItem.name}</h2>
+          <SheetTrigger className="w-full flex justify-between items-center p-3">
+            <div>
+              <Logo fill="white" className=" h-6 w-auto"/>
+            </div>
+            <h2 className=" text-left">{currentItem.name}</h2>
             <HamburgerMenuIcon 
               className="my-1" 
               width={32} 
@@ -48,11 +49,8 @@ export function MobileMenubar() {
                 </Link>
               ))}
             </SheetHeader>
-            <SheetDescription className="p-5">
-              <Button className="flex justify-center w-full">
-                <DownloadIcon className="h-5 w-5" />
-                <span className="ml-2">Resume</span>
-              </Button>
+            <SheetDescription className="flex justify-center py-5">
+              <DownloadCv />
             </SheetDescription>
           </SheetContent>
       </Sheet>
