@@ -31,6 +31,8 @@ import {
 } from "@/components/ui/badge"
 import { useTheme } from 'next-themes';
 
+import { skills } from '@/skills-list';
+
 
 // import { cn } from '@/lib/utils';
 
@@ -86,81 +88,22 @@ export function ProfileLeft() {
                         <br/>
                     </p>
                 </div>
-                <div className='flex flex-col'>
-                    <p className='font-bold text-lg my-2'>
-                        Skills
-                    </p>
-                    <p className='font-medium my-2'>
-                        • Programming Langugage
-                    </p>
-                    <div className='flex flex-wrap gap-1'>
-                        <Badge >C</Badge>
-                        <Badge >C++</Badge>
-                        <Badge >Java</Badge>
-                        <Badge >JavaScript</Badge>
-                        <Badge >Python</Badge>
-                        <Badge >Bash</Badge>
-                        <Badge >Assembly</Badge>
+                <p className='font-bold text-lg my-2'>
+                    Skills
+                </p>
+                {skills.map((skill, index) => (
+                    <div key={index} className='flex flex-col'>
+                        <p className='font-medium my-2'>
+                            • {skill.name}
+                        </p>
+                        <div className='flex flex-wrap gap-1'>
+                            {skill.skills.map((skill, index) => (
+                                <Badge key={index}>{skill}</Badge>
+                            ))}
+                        </div>
                     </div>
-                </div>
-                <div className='flex flex-col'>
-                    <p className='font-medium my-2'>
-                        • Frontend Frameworks
-                    </p>
-                    <div className='flex flex-wrap gap-1'>
-                        <Badge >HTML</Badge>
-                        <Badge >CSS</Badge>
-                        <Badge >Android</Badge>
-                        <Badge >React</Badge>
-                        <Badge >Next.js</Badge>
-                        <Badge >TailwindCSS</Badge>
-                        <Badge >Bootstrap</Badge>
-                    </div>
-                </div>
-                <div className='flex flex-col'>
-                    <p className='font-medium my-2'>
-                        • Backend Frameworks
-                    </p>
-                    <div className='flex flex-wrap gap-1'>
-                        <Badge >Node.js</Badge>
-                        <Badge >Express.js</Badge>
-                        <Badge >Spring Boot</Badge>
-                    </div>
-                </div>
-                <div className='flex flex-col'>
-                    <p className='font-medium my-2'>
-                        • Database
-                    </p>
-                    <div className='flex flex-wrap gap-1'>
-                        <Badge >MySQL</Badge>
-                        <Badge >MongoDB</Badge>
-                        <Badge >Firebase</Badge>
-                        <Badge >PostgreSQL</Badge>
-                    </div>
-                </div>
-                <div className='flex flex-col'>
-                    <p className='font-medium my-2'>
-                        • DevOps
-                    </p>
-                    <div className='flex flex-wrap gap-1'>
-                        <Badge >Docker</Badge>
-                        <Badge >Kubernetes</Badge>
-                        <Badge >Jenkins</Badge>
-                        <Badge >GitHub Actions</Badge>
-                    </div>
-                </div>
-                <div className='flex flex-col'>
-                    <p className='font-medium my-2'>
-                        • Test tools
-                    </p>
-                    <div className='flex flex-wrap gap-1'>
-                        <Badge >Jest</Badge>
-                        <Badge >JUnit</Badge>
-                        <Badge >Postman</Badge>
-                        <Badge >Selenuim</Badge>
-                        <Badge >Cypress</Badge>
-                    </div>
-                </div>
+                )
+                )}
             </div>
         </CardContent>
         <CardFooter className='flex flex-col items-start space-y-3'>
