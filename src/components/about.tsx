@@ -4,6 +4,11 @@ import Socials from '@/components/social'
 
 import DownloadCv from './download-cv'
 
+import { Button } from './ui/button'
+
+import { ArrowTopRightIcon } from '@radix-ui/react-icons'
+
+
 export function About() {
     return (
         <div className='flex flex-col gap-8 p-3 mt-5'>
@@ -16,8 +21,12 @@ export function About() {
             <p className='text-md md:text-lg'>
                 I&apos;m a software engineer with strong interest in finding <span className="font-medium text-red-500">elegant solutions</span> to challenging issues. I like producing excellent software that goes above and beyond expectations. I have a solid background in <span className="font-medium text-red-500">Computer Science</span> and am dedicated to innovation. I&apos;m always learning and keeping up with the newest technological advancements, so I&apos;m prepared to lend my experience to initiatives that have a real-world impact. 
             </p>
-            <div>
+            <div className='flex w-full justify-start items-center gap-5'>
                 <DownloadCv />
+                <Button variant='secondary' className='flex w-fit h-fit px-5 py-3 gap-4 items-center justify-center'>
+                    <a href='/contact' className='text-lg'>Contact Me</a>
+                    <ArrowTopRightIcon />
+                </Button>
             </div>
         </div>
     )
