@@ -31,7 +31,7 @@ import {
 } from "@/components/ui/badge"
 import { useTheme } from 'next-themes';
 
-import { skills } from '@/skills-list';
+import { skills } from '@/lib/skills-list';
 
 
 // import { cn } from '@/lib/utils';

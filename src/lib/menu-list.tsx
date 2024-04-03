@@ -3,13 +3,8 @@
 
 export const menuList = [
     {
-        name: "Home",
-        url: "/",
-        icon: "home",
-    },
-    {
         name: "About",
-        url: "/about",
+        url: "/",
         icon: "about",
     },
     {

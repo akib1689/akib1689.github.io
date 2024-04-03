@@ -12,7 +12,7 @@ import {
 
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Button } from "./ui/button";
-import { menuList } from "@/menu-list";
+import { menuList } from "@/lib/menu-list";
 import { DownloadIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 

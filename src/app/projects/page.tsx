@@ -12,16 +12,11 @@ export default function Home() {
       <main className={isDesktop ? "flex justify-center p-8 h-fit" : "flex flex-col justify-center p-8 h-fit"}>
         {isDesktop ? (
           <>
-            <ProfileLeft />
-            <div className="flex flex-col w-full">
-              <div className="flex-grow">
-                <About />
-              </div>
-            </div>
+           Projects
           </>
         ) : (
           <>
-            <ProfileLeft />
+            Projects
           </>
         )}
       </main>
