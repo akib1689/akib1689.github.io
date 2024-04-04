@@ -23,7 +23,7 @@ export function About() {
             <div className='flex w-full justify-start items-center gap-5'>
                 <DownloadCv />
                 <Button variant='secondary' className='flex w-fit h-fit px-5 py-3 gap-4 items-center justify-center'>
-                    <a href='/contact' className='text-lg'>Contact Me</a>
+                    <a href='/contact'>Contact Me</a>
                     <ArrowTopRightIcon />
                 </Button>
             </div>
