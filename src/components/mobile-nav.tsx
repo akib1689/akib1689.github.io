@@ -18,6 +18,9 @@ import DownloadCv from "./download-cv";
 import { NavigationMenuProps } from "./navigation";
 
 export function MobileMenubar({selectedItem, setSelectedItem, className, children}: NavigationMenuProps) {
+    // used for the opening and closing of the menu
+    const [isOpen, setIsOpen] = useState(true);
+    
     // iterate over menuList and find current item
     let currentItem = menuList[0];
     menuList.forEach((item) => {
@@ -28,8 +31,9 @@ export function MobileMenubar({selectedItem, setSelectedItem, className, childre
 
 
     return (
+      
       <>
-        <Sheet>
+        <Sheet open={isOpen} onOpenChange={setIsOpen}>
           <SheetTrigger className="w-full flex justify-between items-center p-3">
             <div>
               <Logo fill="white" className=" h-6 w-auto"/>
@@ -44,7 +48,11 @@ export function MobileMenubar({selectedItem, setSelectedItem, className, childre
             <SheetHeader className="mt-8">
               {menuList.map((item) => (
                 <Link href={item.url ?? "/"} key={item.name} className="flex items-center justify-center">
-                  <SheetTitle className="p-2 font-medium">{item.name}</SheetTitle>
+                  <SheetTitle className="p-2 font-medium" onClick={() => {  setSelectedItem(item.name);
+                  // close the menu
+                  setIsOpen(false);
+                  }}
+                  >{item.name}</SheetTitle>
                 </Link>
               ))}
             </SheetHeader>

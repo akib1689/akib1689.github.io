@@ -35,7 +35,7 @@ export default function RootLayout({
           <div>
             <ProfileLeft />
           </div>
-          <main className="p-6">
+          <main className="p-6 w-full">
             {children}
           </main>
           </div>
