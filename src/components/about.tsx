@@ -8,7 +8,6 @@ import { Button } from './ui/button'
 
 import { ArrowTopRightIcon } from '@radix-ui/react-icons'
 
-
 export function About() {
     return (
         <div className='flex flex-col gap-8 p-3 mt-5'>

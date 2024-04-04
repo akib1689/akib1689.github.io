@@ -56,7 +56,7 @@ export function ProfileLeft() {
                     Akibur Rahman
                 </CardTitle>
                 <CardDescription className='text-md lg:text-lg'>
-                    Junior Software Engineer | <a href='https://www.linkedin.com/company/pridesys-it-ltd' target='_blank' className='text-blue-500'>Pridesys IT Ltd</a>
+                    Junior Software Engineer | <a href='https://www.linkedin.com/company/pridesys-it-ltd' target='_blank' className='text-blue-500 hover:underline'>Pridesys IT Ltd</a>
                 </CardDescription>
             </CardHeader>
         <Separator />
@@ -69,7 +69,7 @@ export function ProfileLeft() {
                     <p className='text-sm lg:text-md ml-3 my-2'>
                         <span className='font-medium'>✉ Email:</span> 
                         <span className='ml-2'>
-                            <a href='mailto:cadetakib1689+profile@gmail.com' className='text-blue-500'> cadetakib1689@gmail.com</a>
+                            <a href='mailto:cadetakib1689+profile@gmail.com' className='text-blue-500 hover:underline'> cadetakib1689@gmail.com</a>
                         </span>
                         <br/>
                         <span className='font-medium'>📞 Phone:</span>
