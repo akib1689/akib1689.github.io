@@ -24,10 +24,9 @@ import { ModeToggle } from "./mode-toggle";
 
 import Logo from "../../public/logo";
 
+import { NavigationMenuProps } from "@/components/navigation";
 
-export function DesktopMenubar() {
-    const [selectedItem, setSelectedItem] = useState(menuList[0].name);
-
+export function DesktopMenubar({ selectedItem, setSelectedItem, className, children }: NavigationMenuProps) {
     return (
         <div className="w-full flex flex-grow">
             <div className="w-full pl-10">

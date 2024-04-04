@@ -15,10 +15,9 @@ import { menuList } from "@/lib/menu-list";
 import Link from "next/link";
 import Logo from "../../public/logo";
 import DownloadCv from "./download-cv";
+import { NavigationMenuProps } from "./navigation";
 
-export function MobileMenubar() {
-    const [selectedItem, setSelectedItem] = useState(menuList[0].name);
-
+export function MobileMenubar({selectedItem, setSelectedItem, className, children}: NavigationMenuProps) {
     // iterate over menuList and find current item
     let currentItem = menuList[0];
     menuList.forEach((item) => {
