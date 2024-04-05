@@ -19,7 +19,7 @@ import { NavigationMenuProps } from "./navigation";
 
 export function MobileMenubar({selectedItem, setSelectedItem, className, children}: NavigationMenuProps) {
     // used for the opening and closing of the menu
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
     
     // iterate over menuList and find current item
     let currentItem = menuList[0];
