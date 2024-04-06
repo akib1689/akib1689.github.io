@@ -34,6 +34,7 @@ import { useTheme } from 'next-themes';
 import { skills } from '@/lib/skills-list';
 
 import Socials from '@/components/social';
+import { Button } from './ui/button';
 
 
 // import { cn } from '@/lib/utils';
@@ -56,7 +57,9 @@ export function ProfileLeft() {
                     Akibur Rahman
                 </CardTitle>
                 <CardDescription className='text-md lg:text-lg'>
-                    Junior Software Engineer | <a href='https://www.linkedin.com/company/pridesys-it-ltd' target='_blank' className='text-blue-500 hover:underline'>Pridesys IT Ltd</a>
+                    Junior Software Engineer | <Button variant='link' className='text-md lg:text-lg px-0'> 
+                            <a href='https://www.linkedin.com/company/pridesys-it-ltd' target='_blank'>Pridesys IT Ltd</a>
+                        </Button>
                 </CardDescription>
             </CardHeader>
         <Separator />
