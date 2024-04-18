@@ -56,21 +56,17 @@ export default function Home() {
           &gt; My Projects
         </p>
       {projects.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage).map((project, i) => (
-          <Card key={i} className="group flex overflow-hidden">
-              <div className="w-fit flex justify-end">
-                {project.images.map((image, i) => (
-                  theme === image.theme ? (
-                    <Image
-                      key={i}
-                      src={image.src}
-                      alt={project.title}
-                      width={300}
-                      height={250}
-                      className="group-hover:rotate-3 transition-all duration-300 ease-in-out"/>
-                    ) : (
-                    null
-                    )
-                ))}
+          <Card key={i} className="group flex  flex-col xl:flex-row overflow-hidden">
+              <div className="w-fit flex">
+                {/* check if any image with the property image_light or image_dark exist? */}
+                {project.image_light && project.image_dark && (
+                  <Image
+                    src={theme === "dark" ? project.image_dark : project.image_light}
+                    alt={project.title}
+                    width={400}
+                    height={250}
+                  />
+                )}
               </div>
               <div className="flex flex-col flex-1">
                 <CardHeader className="text-lg">
@@ -92,12 +88,10 @@ export default function Home() {
                     </div>
                   </div>
                 </CardContent>
-                <CardFooter>
-                  <div className="flex gap-2 flex-wrap">
-                    {project.tags.map((tag, i) => (
-                      <Badge key={i} variant='secondary'>{tag}</Badge>
-                    ))}
-                  </div>
+                <CardFooter className="flex gap-2 flex-wrap">                  
+                  {project.tags.map((tag, i) => (
+                    <Badge key={i} variant='secondary'>{tag}</Badge>
+                  ))}
                 </CardFooter>
               </div>
           </Card>

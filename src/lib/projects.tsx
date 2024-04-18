@@ -19,16 +19,8 @@ export const projects = [
         tags: [
             "Node", "Express.js", "Javascript", "HTML", "CSS", "Tesseract OCR", "MongoDB", "Socket.io", "Prisma", "React", "Next.js"
         ],
-        images: [
-            {
-                theme: "light",
-                src: "images/document-parser.gif",
-            },
-            {
-                theme: "dark", 
-                src: "images/document-parser.gif"
-            }
-        ]
+        image_light: "images/document-parser.gif",
+        image_dark: "images/document-parser.gif"
     },
     {
         title: "Typing Tool",
@@ -43,17 +35,8 @@ export const projects = [
         tags: [
             "Node", "Express.js", "Javascript", "HTML", "CSS"
         ],
-        images: [
-            {
-                theme: "light",
-                src: "images/typing_tool.png",
-            },
-            {
-                theme: "dark", 
-                src: "images/typing_tool.png"
-            }
-        ]
-        
+        image_light: "images/typing_tool.png",
+        image_dark: "images/typing_tool.png"        
     },
     {
         title: "Tv Shows",
@@ -68,16 +51,8 @@ export const projects = [
         tags: [
             "Android", "Java", "TMDB API", "Retrofit", "Glide", "RecyclerView"
         ],
-        images: [
-            {
-                theme: "light",
-                src: "images/tv_shows.png",
-            },
-            {
-                theme: "dark", 
-                src: "images/tv_shows.png"
-            }
-        ]
+        image_light: "images/tv_shows.png",
+        image_dark: "images/tv_shows.png"
 
     },
     {
@@ -93,16 +68,8 @@ export const projects = [
         tags: [
             "Node", "Express.js", "Javascript", "HTML", "CSS", "Database", "Oracle"
         ],
-        images: [
-            {
-                theme: "light",
-                src: "images/bus_manager.png",
-            },
-            {
-                theme: "dark", 
-                src: "images/bus_manager.png"
-            }
-        ]
+        image_light: "images/bus_manager.png",
+        image_dark: "images/bus_manager.png"
     },
     {
         title: "Cube Simulator",
@@ -117,16 +84,6 @@ export const projects = [
         tags: [
             "Java", "Swing", "JavaFX", "Maven"
         ],
-        images: [
-            // {
-            //     theme: "light",
-            //     src: "images/cube_simulator.png",
-            // },
-            // {
-                //     theme: "dark", 
-            //     src: "images/cube_simulator.png"
-            // }
-        ]
     },
     {
         title: "Home Lab Setup",
@@ -141,16 +98,6 @@ export const projects = [
         tags: [
             "Docker", "Docker-compose", "Linux", "Nginx", "Prometheus", "Grafana", "Pi-hole", "Portainer", "Traefik", "Sonarr", "Radarr", "Jackett", "Transmission", "Jellyfin", "Nextcloud", "MariaDB", "Postgres", "Redis"
         ],
-        images: [
-            // {
-            //     theme: "light",
-            //     src: "images/home_lab.png",
-            // },
-            // {
-                //     theme: "dark", 
-            //     src: "images/home_lab.png"
-            // }
-        ]
     },
     {
         title: "Machine Learning Model to predict the Post Traumatic Stress Disorder",
@@ -165,15 +112,5 @@ export const projects = [
         tags: [
             "Python", "Flask", "Machine Learning", "Random Forest Classifier", "Heroku"
         ],
-        images: [
-            // {
-            //     theme: "light",
-            //     src: "images/ptsd_predictor.png",
-            // },
-            // {
-            //     theme: "dark", 
-            //     src: "images/ptsd_predictor.png"
-            // }
-        ]
     },
 ]
