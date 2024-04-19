@@ -71,7 +71,7 @@ export const story = {
             link: "https://en.wikipedia.org/wiki/Cumilla_Cadet_College",
         },
         {
-            text: "after passing both the Higher Secondary Certificate (HSC) and Secondary School Certificate (SSC) exams with the best possible results, prior to beginning my university studies. I now have a solid foundation in compoter science and engineering fundamentals thanks to my scholastic experience, which has also stoked my interest in creativity and technological problem-solving.",
+            text: "after passing both the Higher Secondary Certificate (HSC) and Secondary School Certificate (SSC) exams with the best possible results, prior to beginning my university studies. I now have a solid foundation in computer science and engineering fundamentals thanks to my scholastic experience, which has also stoked my interest in creativity and technological problem-solving.",
             linkAvilability: false,
         }
     ]
