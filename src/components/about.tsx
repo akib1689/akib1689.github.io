@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Socials from '@/components/social'
+import { Socials } from '@/components/social'
 
 import DownloadCv from './download-cv'
 
@@ -13,7 +13,7 @@ export function About() {
         <div className='flex flex-col gap-8 p-3 mt-5'>
             <div className='flex flex-col gap-2 text-3xl md:text-4xl font-semibold'>
                 <p>Hello, This is <span className=" inline-block bg-gradient-to-r from-cyan-600 to-purple-200 text-transparent bg-clip-text">Akibur Rahman</span>, </p>
-                <p className='text-2xl md:text-3xl'>and I&apos;m professional <span className="bg-gradient-to-r from-red-500 to-purple-400 text-transparent bg-clip-text">Software Engineer</span></p>
+                <p className='text-2xl md:text-3xl'>and I&apos;m a professional <span className="bg-gradient-to-r from-red-500 to-purple-400 text-transparent bg-clip-text">Software Engineer</span></p>
             </div>
             <Socials />
             <p className='text-lg md:text-xl font-semibold'>&gt; Who am I?</p>

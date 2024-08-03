@@ -15,7 +15,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle
 } from "@/components/ui/card"
@@ -29,7 +28,6 @@ import {
 import {
     Badge
 } from "@/components/ui/badge"
-import { useTheme } from 'next-themes';
 
 import { skills } from '@/lib/skills-list';
 
@@ -42,8 +40,6 @@ import { Button } from './ui/button';
 // type CardProps = React.ComponentProps<typeof Card>;
 
 export function ProfileLeft() {
-    // get the current theme
-    const { theme } = useTheme();
     return (
         <Card className="left-0 top-0 w-full lg:w-[500px] h-fit max-h-max flex flex-col p-3 border-none">
             <div className='flex justify-center p-3'>
@@ -66,13 +62,15 @@ export function ProfileLeft() {
         <CardContent className='my-3'>
             <div className='space-y-3'>
                 <div >
-                    <p className='font-medium my-2'>
+                    <p className='font-medium text-lg my-2'>
                         • Personal Details
                     </p>
                     <p className='text-sm lg:text-md ml-3 my-2'>
                         <span className='font-medium'>✉ Email:</span> 
                         <span className='ml-2'>
-                            <a href='mailto:cadetakib1689+profile@gmail.com' className='text-blue-500 hover:underline'> cadetakib1689@gmail.com</a>
+                            <Button variant='link' className='px-0'>
+                                <a href='mailto:cadetakib1689+profile@gmail.com'> cadetakib1689@gmail.com</a>
+                            </Button>
                         </span>
                         <br/>
                         <span className='font-medium'>📞 Phone:</span>
@@ -101,12 +99,6 @@ export function ProfileLeft() {
                 )}
             </div>
         </CardContent>
-        <CardFooter className='flex flex-col items-start space-y-3'>
-            <p className='font-medium text-md lg:text-lg'>
-                Socials
-            </p>
-            <Socials />   
-        </CardFooter>
     </Card>
     );
 }
