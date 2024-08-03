@@ -1,7 +1,25 @@
 import exp from "constants";
+import { title } from "process";
 
 // file that contains the experience 
 export const experience = [
+    {
+        title: "Software Engineer II",
+        company: {
+            name: "Pridesys IT Ltd",
+            url: "https://www.linkedin.com/company/pridesys-it-ltd/",
+        },
+        location: "Dhaka, Bangladesh",
+        startDate: "June 2024",
+        endDate: "Present",
+        job_type: "Full-time",
+        description: [
+            "Implemented a robust infrustructure in Azure to support the company's microservices architecture with Terraform.",
+            "Developed a complete communication channel for the company using fully open source software like Mattermost and Jitsi.",
+            "Implemented a CI/CD pipeline using GitHub Actions to automate the deployment of the company's services to Azure.",
+            "Completed the Azure Fundamentals certification to better understand the Azure cloud platform.",
+        ],
+    },    
     {
         title: "Junior Software Engineer",
         company: {
@@ -10,7 +28,7 @@ export const experience = [
         },
         location: "Dhaka, Bangladesh",
         startDate: "November 2023",
-        endDate: "Present",
+        endDate: "June 2024",
         job_type: "Part-time",
         description: [
             "Contributed significantly to the development of a strong Spring microservice intended to handle user accounts, improve system speed, and improve user experience",
