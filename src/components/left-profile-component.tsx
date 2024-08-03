@@ -15,7 +15,6 @@ import {
     Card,
     CardContent,
     CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle
 } from "@/components/ui/card"
@@ -29,11 +28,9 @@ import {
 import {
     Badge
 } from "@/components/ui/badge"
-import { useTheme } from 'next-themes';
 
 import { skills } from '@/lib/skills-list';
 
-import Socials from '@/components/social';
 import { Button } from './ui/button';
 
 
@@ -42,8 +39,6 @@ import { Button } from './ui/button';
 // type CardProps = React.ComponentProps<typeof Card>;
 
 export function ProfileLeft() {
-    // get the current theme
-    const { theme } = useTheme();
     return (
         <Card className="left-0 top-0 w-full lg:w-[500px] h-fit max-h-max flex flex-col p-3 border-none">
             <div className='flex justify-center p-3'>
@@ -57,7 +52,7 @@ export function ProfileLeft() {
                     Akibur Rahman
                 </CardTitle>
                 <CardDescription className='text-md lg:text-lg'>
-                    Junior Software Engineer | <Button variant='link' className='text-md lg:text-lg px-0'> 
+                    Software Engineer II | <Button variant='link' className='text-md lg:text-lg px-0'> 
                             <a href='https://www.linkedin.com/company/pridesys-it-ltd' target='_blank'>Pridesys IT Ltd</a>
                         </Button>
                 </CardDescription>
@@ -66,17 +61,19 @@ export function ProfileLeft() {
         <CardContent className='my-3'>
             <div className='space-y-3'>
                 <div >
-                    <p className='font-medium my-2'>
+                    <p className='font-medium text-lg my-2'>
                         • Personal Details
                     </p>
                     <p className='text-sm lg:text-md ml-3 my-2'>
                         <span className='font-medium'>✉ Email:</span> 
                         <span className='ml-2'>
-                            <a href='mailto:cadetakib1689+profile@gmail.com' className='text-blue-500 hover:underline'> cadetakib1689@gmail.com</a>
+                            <Button variant='link' className='px-0'>
+                                <a href='mailto:ak.akibur.rahman+profilee@gmail.com'> ak.akibur.rahman@gmail.com</a>
+                            </Button>
                         </span>
                         <br/>
                         <span className='font-medium'>📞 Phone:</span>
-                        <span className='ml-2'>+880 1521 705298</span>
+                        <span className='ml-2'>+880 1550 008 035</span>
                         <br/>
                         <span className='font-medium'>🏠 Address:</span>
                         <span className='ml-2'>Dhaka, Bangladesh</span>
@@ -101,12 +98,6 @@ export function ProfileLeft() {
                 )}
             </div>
         </CardContent>
-        <CardFooter className='flex flex-col items-start space-y-3'>
-            <p className='font-medium text-md lg:text-lg'>
-                Socials
-            </p>
-            <Socials />   
-        </CardFooter>
     </Card>
     );
 }

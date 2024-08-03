@@ -19,9 +19,9 @@ import {
 
 import { useTheme } from 'next-themes';
 
-const Socials = () => {
+export function Socials () {
     const { theme } = useTheme();
-  return (
+    return (
     <div className='flex flex-row space-x-3 w-fill'>
                 <a href={NEXT_PUBLIC_GITHUB}>
                     <Avatar className='w-6 h-6'>
@@ -56,5 +56,3 @@ const Socials = () => {
             </div> 
   )
 }
-
-export default Socials
