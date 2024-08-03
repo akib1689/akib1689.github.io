@@ -31,7 +31,6 @@ import {
 
 import { skills } from '@/lib/skills-list';
 
-import Socials from '@/components/social';
 import { Button } from './ui/button';
 
 
@@ -53,7 +52,7 @@ export function ProfileLeft() {
                     Akibur Rahman
                 </CardTitle>
                 <CardDescription className='text-md lg:text-lg'>
-                    Junior Software Engineer | <Button variant='link' className='text-md lg:text-lg px-0'> 
+                    Software Engineer II | <Button variant='link' className='text-md lg:text-lg px-0'> 
                             <a href='https://www.linkedin.com/company/pridesys-it-ltd' target='_blank'>Pridesys IT Ltd</a>
                         </Button>
                 </CardDescription>
@@ -69,12 +68,12 @@ export function ProfileLeft() {
                         <span className='font-medium'>✉ Email:</span> 
                         <span className='ml-2'>
                             <Button variant='link' className='px-0'>
-                                <a href='mailto:cadetakib1689+profile@gmail.com'> cadetakib1689@gmail.com</a>
+                                <a href='mailto:ak.akibur.rahman+profilee@gmail.com'> ak.akibur.rahman@gmail.com</a>
                             </Button>
                         </span>
                         <br/>
                         <span className='font-medium'>📞 Phone:</span>
-                        <span className='ml-2'>+880 1521 705298</span>
+                        <span className='ml-2'>+880 1550 008 035</span>
                         <br/>
                         <span className='font-medium'>🏠 Address:</span>
                         <span className='ml-2'>Dhaka, Bangladesh</span>
