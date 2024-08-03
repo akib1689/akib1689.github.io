@@ -24,7 +24,7 @@ function Stepper({ orientation, className, variant, ...props }: StepperProps) {
                 })
             }/>
             <div className='flex items-center justify-center'>
-                <div className='w-4 h-4 bg-white rounded-full'></div>
+                <div className='w-4 h-4 bg-foreground rounded-full'></div>
             </div>
             <Separator orientation={orientation} className={
                 cn('flex-1', {
