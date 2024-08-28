@@ -1,13 +1,9 @@
 import React, { useState } from "react";
 import {
     NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
     NavigationMenuItem,
     NavigationMenuLink,
     NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
     navigationMenuTriggerStyle,
   } from "@/components/ui/navigation-menu"
 import Link from "next/link";
@@ -16,10 +12,11 @@ import Link from "next/link";
 import Image from "next/image";
 import logo from "@/public/logo.svg";
 
+// theme of the website
+import { useTheme } from "next-themes";
+
 // menu items
 import { menuList } from "@/lib/menu-list";
-import { Button } from "./ui/button";
-import { DownloadIcon } from "@radix-ui/react-icons";
 import { ModeToggle } from "./mode-toggle";
 
 import Logo from "../../public/logo";
@@ -27,11 +24,17 @@ import Logo from "../../public/logo";
 import { NavigationMenuProps } from "@/components/navigation";
 
 export function DesktopMenubar({ selectedItem, setSelectedItem, className, children }: NavigationMenuProps) {
+    // get the theme
+    const { theme } = useTheme();
     return (
         <div className="w-full flex flex-grow">
             <div className="w-full pl-10">
                 
-                <Logo fill="#fff" className=" h-8 w-auto"/>
+                <Logo 
+                    // set the fill of the logo depending on the theme
+                    fill={theme === "dark" ? "#fff" : "#000"}
+                    className=" h-8 w-auto"
+                />
                     
             </div>
             <NavigationMenu className=" justify-end pr-12">
