@@ -12,7 +12,7 @@ const DownloadCv = (props: DownloadCvProps) => {
   return (
     <Button variant='default' className={cn('flex w-fit h-fit px-5 py-3 gap-4 items-center justify-center', props.className)}>
         <DownloadIcon className='w-6 h-6' />
-        <a href='/Akibur_Rahman_Resume.pdf' download>
+        <a href='/Akibur_Rahman_CV.pdf' download>
             Download CV
         </a>
     </Button>

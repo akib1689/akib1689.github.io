@@ -14,6 +14,15 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
+    webpack: (config, { isServer }) => {
+        if (!isServer) {
+            config.module.rules.push({
+                test: /resume/,
+                use: 'null-loader',
+            })
+        }
+        return config;
+    },
 };
 
 export default nextConfig;
