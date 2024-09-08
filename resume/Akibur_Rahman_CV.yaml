@@ -1,0 +1,156 @@
+cv:
+  name: Akibur Rahman
+  location: Dhaka, Bangladesh
+  email: ak.akibur.rahman@gmail.com
+  phone: tel:+880-1521-70-52-98
+  website: https://akib1689.github.io/
+  social_networks:
+    - network: LinkedIn
+      username: akib1689
+    - network: GitHub
+      username: akib1689
+  sections:
+    summary:
+      - 'A Software Engineer with a strong background in Android development and a passion for DevOps. I bring over **2 year of experience** building and publishing native Android applications during my time at university.'
+      - 'My journey has evolved from mobile development to mastering DevOps practices, where I now focus on **hosting** and **managing services**, **automating workflows** and **maintaining Kafka clusters on Kubernetes**.'
+    experience:
+      - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
+        position: Software Engineer II
+        location: Dhaka, Bangladesh
+        start_date: 2024-06
+        end_date: present
+        highlights:
+          - Migrated **on-premises services** to **cloud infrustracture** using **Azure** resulting in a streamlined infrastructure that improved the system uptime and reduced maintenance needs.
+          - Implemented a **CI/CD pipeline** using **GitHub Actions** to automate and streamline the deployment of the company services to Azure, enhanching the **deployment efficiency** and reducing **manual errors**.
+          - Configured and maintained a **Kafka cluster** on **Kubernetes**, ensuring reliable data streaming to support critical business operatoins.
+          - Charted an **open-source communication** system using open source software, consolidating **100+ groups** from multiple platforms into a **single**, **streamlined** solution.
+          - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
+      - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
+        position: Junior Software Engineer
+        location: Dhaka, Bangladesh
+        start_date: 2023-11
+        end_date: 2024-06
+        highlights:
+          - Formulated a **microservice-based architecture** for the company's flagship product, Pridesys ERP.
+          - Implemented **JUnit tests** integrated with **Github Actions** to ensure code quality and significantly reduced the need for manual testing.
+          - '**Tools Used**: Spring Boot, Docker, GitHub Actions, JUnit'
+      - company: '[Durjoy DSS](https://www.linkedin.com/company/durjoy/)'
+        position: Junior Frontend Developer
+        location: Dhaka, Bangladesh
+        start_date: 2021-07
+        end_date: 2022-01
+        highlights: 
+          - Developed a **mobile application** using **Java** and **Android Studio** that allowed users to track their daily expenses.
+          - Redesined a user friendly **UI** that increased the user engagement.
+          - Published **2 applications** on the **Google Play Store**.
+          - '**Tools Used**: Java, Android, Android Studio, Room Database, REST API.'
+    
+    open_source_contributions:
+      - name: '[Render CV](https://github.com/sinaatalay/rendercv)'
+        date: '[PR #166](https://github.com/sinaatalay/rendercv/pull/166)'
+        highlights:
+        - Enhanded the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
+        - '**Tools Used**: Python, YAML, Jinja2'
+      
+
+    education:
+      - institution: Bangladesh University of Engineering & Technology
+        area: Computer Science & Engineering
+        degree: BSc
+        start_date: 2019-04
+        end_date: 2024-05
+        highlights:
+        # todo: add relevant links
+          - 'GPA: 3.63/4.0'
+          - '**Coursework:** Computer Architecture, Computer Networks, Data Structures, Algorithms, Operating Systems, Software Engineering'
+
+    # publications:
+    #   - title: 3D Finite Element Analysis of No-Insulation Coils
+    #     authors:
+    #       - Frodo Baggins
+    #       - '***John Doe***'
+    #       - Samwise Gamgee
+    #     doi: 10.1109/TASC.2023.3340648
+    #     date: 2004-01
+    projects:
+      - name: Dynamic Document Parser
+        date: '[Github Organization](https://github.com/CSE-408-B1)'
+        highlights:
+          - Developed **web based application** on top of **Tesseract OCR** following **microservice architecture** for parsing and extracting data from documents.
+          - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
+      - name: Typing tool for Developers
+        date: '[Git Repository](https://github.com/akib1689/Typing_tool)'
+        highlights:
+          - Developed **typing tool** for the developers that searches for the random code snippets from the GitHub to improve their typing speed and accuracy.
+          - '**Tools Used**: JavaScript, Node.js'
+      - name: Custom Operating System
+        date: '[Git Repository](https://github.com/akib1689/CSE_314)'
+        highlights:
+          - Built a **UNIX-style** OS with a **scheduler**, **memory management** and **file system** on top of the **xv6** operating system.
+          - '**Tools Used**: C++'
+      - name: IMDB Clone for android
+        date: '[Git Repository](https://github.com/akib1689/TVShows)'
+        highlights:
+          - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
+          - '**Tools Used**: Java, Android, REST API'
+      - name: Home Lab Setup
+        date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
+        highlights:
+          - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
+          - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
+          - '**Tools Used**: Docker, Docker Compose'
+    skills:
+      - label: Core Languages
+        details: C, C++, Java, Python, JavaScript, Bash
+      - label: DevOps & GitOps
+        details: Kubernetes, Docker, Helm, Jenkins, GitHub Actions, OpenTofu, Terraform, Kafka
+      - label: Testing & Automation
+        details: JUnit, Mockito, JaCoCo, Playwright, Selenium, GitHub Actions
+      - label: Databases
+        details: MySQL, PostgreSQL, MongoDB
+      - label: Cloud Computing & Hosting
+        details: Azure, AWS
+      # - label: Frontend Frameworks
+      #   details: Android, React, Vue, Next.js, HTML, CSS, Tailwind CSS
+      - label: Backend Frameworks
+        details: Spring Boot, Node.js, Django
+      
+      
+design:
+  theme: engineeringresumes
+  color: '#004f90'
+  disable_last_updated_date: false
+  disable_page_numbering: false
+  page_size: letterpaper
+  # margins:
+  #   page: 
+  #     top: 1.2 cm
+  #     bottom: 1.2 cm
+  #     left: 1.2 cm
+  #     right: 1.2 cm
+  #   entry_area: 
+  #     left_and_right: 0 cm
+  #     vertical_between: 0.2 cm
+  #     date_and_location_width: 3.5 cm
+  #   header: 
+  #     vertical_between_name_and_connections: 0 pt
+  #     bottom: 0 pt
+  #     horizontal_between_connections: 4 pt
+  #   section_title: 
+  #     top: 0.15 cm
+  #     bottom: 0.1 cm
+  #   highlights_area: 
+  #     top: 0.10 cm
+  #     left: 0 cm
+  #     vertical_between_bullet_points: 0.06 cm
+  use_icons_for_connections: true
+  disable_external_link_icons: true
+  # seperator_between_connections: $|$
+  # # header_font_size: 22 pt
+
+rendercv_settings:
+  render_command: 
+    output_folder_name: 'rendercv-output'
+    pdf_path: './public/Akibur_Rahman_CV.pdf'
+    dont_generate_markdown: true
+    dont_generate_png: true
