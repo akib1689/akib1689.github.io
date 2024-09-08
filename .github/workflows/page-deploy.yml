@@ -34,9 +34,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Print Environment variable to .env.local
-        run: echo ${{ secrets.ENV_FILE}} | base64 --decode > .env.local
-
       - name: Setup python
         uses: actions/setup-python@v5
         with:
@@ -45,12 +42,15 @@ jobs:
 
       - name: Install
         run: |
-          pip install rendercv
+          pip install -r requirements.txt
 
       - name: Generate Resume
         run: |
           rendercv render resume/Akibur_Rahman_CV.yml
-      
+
+      - name: Print Environment variable to .env.local
+        run: echo ${{ secrets.ENV_FILE}} | base64 --decode > .env.local
+    
       - name: Detect package manager
         id: detect-package-manager
         run: |
