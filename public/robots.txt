@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://akib1689.github.io/sitemap.xml
