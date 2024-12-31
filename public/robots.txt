@@ -1,4 +1,10 @@
+# Allow all bots to crawl the site
 User-agent: *
+Disallow: /api/             # Prevent crawling of API routes
+Disallow: /server/          # Prevent access to server-only files, if any
+Disallow: /_next/           # Block access to Next.js internal build files
+Disallow: /static/          # Block static assets if unnecessary for indexing
 Allow: /
 
+# Declare the sitemap for better indexing
 Sitemap: https://akibur-rahman.com/sitemap.xml
