@@ -37,6 +37,9 @@ export const metadata: Metadata = {
         alt: process.env.AUTHOR_NAME,
       },
     ],
+  },
+  alternates: {
+    canonical: process.env.WEBSITE_URL,
   }
 
 };
