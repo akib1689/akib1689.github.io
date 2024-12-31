@@ -6,35 +6,35 @@ import { MenubarComponent } from "@/components/navigation";
 
 export const metadata: Metadata = {
   title: process.env.WEBSITE_TITLE,
-  description: "Akibur Rahman's personal portfolio wensite showcasing projects, experience and skills.",
-  keywords: "Akibur Rahman, Akibur, Rahman, Portfolio, Projects, Experience, Skills, Software Engineer, Full Stack Developer, Web Developer, React, Next.js, TypeScript, Tailwind CSS, Node.js, JavaScript, HTML, CSS, Devops, Docker, Kubernetes, AWS, GCP, Azure, CI/CD, Git, Github, Gitlab, Bitbucket, Jira, Confluence, Agile, Scrum, Kanban, Trello, Slack, Zoom, Microsoft Teams, Google Meet, Webex, Zoom, Discord, Telegram, Signal, WhatsApp",
-  authors: [{ name: "Akibur Rahman" }],
+  description: process.env.WEBSITE_DESCRIPTION,
+  keywords: "Akibur Rahman, Akibur, Rahman, Portfolio, Software Engineering, Technical Solutions, Full-Stack Development, ERP Systems Development, Network Configuration, Spring Boot Development, Backend Engineering, Cloud Networking, Custom DNS Solutions, Automation and Accounting Tools",
+  authors: [{ name: process.env.AUTHOR_NAME }],
   openGraph: {
     title: process.env.WEBSITE_TITLE,
-    description: "Akibur Rahman's personal portfolio wensite showcasing projects, experience and skills.",
+    description: process.env.WEBSITE_DESCRIPTION,
     type: "website",
-    url: "https://akib1689.github.io",
+    url: process.env.WEBSITE_URL,
     images: [
       {
-        url: "https://akib1689.github.io/images/profile_img.jpg",
-        width: 800,
+        url: process.env.WEBSITE_URL + "/images/profile_img.jpg",
+        width: 600,
         height: 600,
-        alt: "Akibur Rahman",
+        alt: process.env.AUTHOR_NAME,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: process.env.WEBSITE_TITLE,
-    description: "Akibur Rahman's personal portfolio wensite showcasing projects, experience and skills.",
+    description: process.env.WEBSITE_DESCRIPTION,
     site: "@akib1689",
     creator: "@akib1689",
     images: [
       {
-        url: "https://akib1689.github.io/images/profile_img.jpg",
-        width: 800,
+        url: process.env.WEBSITE_URL + "/images/profile_img.jpg",
+        width: 600,
         height: 600,
-        alt: "Akibur Rahman",
+        alt: process.env.AUTHOR_NAME,
       },
     ],
   }
