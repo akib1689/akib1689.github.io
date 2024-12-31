@@ -8,20 +8,34 @@
 
 
 <url>
-  <loc>https://akib1689.github.io/</loc>
-  <lastmod>2024-09-08T17:46:42+00:00</lastmod>
+  <loc>https://akibur-rahman.com/</loc>
+  <lastmod>2024-12-31T14:54:47+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://akib1689.github.io/Akibur_Rahman_CV.pdf</loc>
-  <lastmod>2024-09-08T17:46:42+00:00</lastmod>
+  <loc>https://akibur-rahman.com/Akibur_Rahman_CV.pdf</loc>
+  <lastmod>2024-12-31T14:54:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://akib1689.github.io/contact</loc>
-  <lastmod>2024-09-08T17:46:42+00:00</lastmod>
+  <loc>https://akibur-rahman.com/contact</loc>
+  <lastmod>2024-12-31T14:54:47+00:00</lastmod>
+  <priority>0.70</priority>
+</url>
+<url>
+  <loc>https://akibur-rahman.com/projects</loc>
+  <lastmod>2024-12-31T14:54:47+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://akibur-rahman.com/education</loc>
+  <lastmod>2024-12-31T14:54:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://akibur-rahman.com/experience</loc>
+  <lastmod>2024-12-31T14:54:47+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
