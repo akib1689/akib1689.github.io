@@ -21,12 +21,12 @@ cv:
         end_date: present
         # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
         highlights:
-          - Migrated **on-premises services** to **cloud infrustracture**, cutting downtime by **30%** and maintenance costs.
-          # - Migrated **on-premises services** to **cloud infrustracture** using **Azure** resulting in a streamlined infrastructure that improved the system uptime and reduced maintenance needs.
-          - Automated deployments with **GitHub Actions** reducing manual errors by 90%.
+          - Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs.
+          # - Migrated **on-premises services** to **cloud infrastructure** using **Azure** resulting in a streamlined infrastructure that improved the system uptime and reduced maintenance needs.
+          - Automate deployments with **GitHub Actions** reducing manual errors by **90%**.
           # - Implemented a **CI/CD pipeline** using **GitHub Actions** to automate and streamline the deployment of the company services to Azure, enhanching the **deployment efficiency** and reducing **manual errors**.
-          - Maintained a **Kafka cluster** on **Kubernetes**, ensuring reliable data streaming to support critical business operatoins.
-          - Consolidated **100+ communication groups** from multiple platforms into a **single platform** using **open-source software**.
+          - Maintain a **Kafka cluster** on **Kubernetes**, ensuring **1k+** messages per second with **99.9%** uptime.
+          - Consolidate **100+ communication groups** from multiple platforms into a **single platform**.
           # - Charted an **open-source communication** system using open source software, consolidating **100+ groups** from multiple platforms into a **single**, **streamlined** solution.
           - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
@@ -35,7 +35,7 @@ cv:
         start_date: 2023-11
         end_date: 2024-06
         highlights:
-          - Implemented **JUnit tests** integrated with **GitHub Actions** reducing the QA effort by **70%**.
+          - Implemented **JUnit tests** integrated with **GitHub Actions** reducing the Quality Assurance (QA) effort by **70%**.
           - Designed a **microservice-based architecture** for the company's flagship product, Pridesys ERP.
           # - Implemented **JUnit tests** integrated with **GitHub Actions** to ensure code quality and significantly reduced the need for manual testing.
           - '**Tools Used**: Spring Boot, Docker, GitHub Actions, JUnit'
@@ -54,8 +54,8 @@ cv:
       - name: '[Render CV](https://rendercv.com/)'
         date: '[PR #166](https://github.com/rendercv/rendercv/pull/166)'
         highlights:
-        # - Enhanded the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
-        - Enhanded the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, used by **1k+** users.
+        # - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
+        - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, used by **1k+** users.
         - '**Tools Used**: Python, YAML, Jinja2'
       
 
@@ -63,7 +63,7 @@ cv:
       - institution: Bangladesh University of Engineering & Technology
         area: Computer Science & Engineering
         degree: BSc
-        date: 'GPA: **3.63/4.0**'
+        # date: 'GPA: **3.63/4.0**'
         start_date: 2019-04
         end_date: 2024-05
         highlights:
@@ -95,7 +95,7 @@ cv:
       - name: Home Lab Setup
         date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
         highlights:
-          - Orchastrated **15+ self hosted services** on a single server using **docker compose** reducing monthly SaaS costs by **$50+**. 
+          - Orchestrated **15+ self hosted services** on a single server using **docker compose** reducing monthly SaaS costs by **$50+**. 
           # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
           # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
           - '**Tools Used**: Docker, Docker Compose'
@@ -144,7 +144,7 @@ design:
     vertical_space_between_connections_and_first_section: "0.6cm"
     horizontal_space_between_connections: "0.2cm"
     separator_between_connections: "|"
-    use_icons_for_connections: true
+    use_icons_for_connections: false
     alignment: center
   text:
     font_family: "Open Sans"
