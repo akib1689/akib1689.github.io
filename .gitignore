@@ -17,6 +17,9 @@
 # production
 /build
 
+# pyenv environment
+.python-version
+
 # misc
 .DS_Store
 *.pem
