@@ -10,9 +10,11 @@ cv:
     - network: GitHub
       username: akib1689
   sections:
-    summary:
-      - Full Stack Engineer with **2+ years of experience** building scalable backend systems (Spring Boot, Node.js), dynamic frontend (React, Next.js), and automating DevOps workflows.
-      - Successfully migrated legacy systems to Azure, reduced deployment errors by **90%** via **CI/CD pipelines**, and maintained **Kafka clusters** for real-time data streaming.
+    research_interests:
+      - bullet: Software Engineering, 
+        description: 'I am passionate about building scalable and efficient software systems, with a focus on DevOps practices and cloud computing.'
+      - bullet: Cloud Computing,
+        description: 'I am interested in exploring the latest cloud technologies and architectures to build robust and scalable applications.'
     experience:
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
         position: Software Engineer II
