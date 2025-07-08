@@ -1,6 +1,6 @@
 cv:
   name: Akibur Rahman
-  location: Dhaka, Bangladesh
+  # location: Dhaka, Bangladesh
   email: ak.akibur.rahman@gmail.com
   phone: tel:+880-1521-70-52-98
   website: https://akibur-rahman.com/
@@ -11,56 +11,8 @@ cv:
       username: akib1689
   sections:
     research_interests:
-      - bullet: Software Engineering, 
-        description: 'I am passionate about building scalable and efficient software systems, with a focus on DevOps practices and cloud computing.'
-      - bullet: Cloud Computing,
-        description: 'I am interested in exploring the latest cloud technologies and architectures to build robust and scalable applications.'
-    experience:
-      - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
-        position: Software Engineer II
-        location: Dhaka, Bangladesh
-        start_date: 2024-06
-        end_date: present
-        # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
-        highlights:
-          - Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs.
-          # - Migrated **on-premises services** to **cloud infrastructure** using **Azure** resulting in a streamlined infrastructure that improved the system uptime and reduced maintenance needs.
-          - Automate deployments with **GitHub Actions** reducing manual errors by **90%**.
-          # - Implemented a **CI/CD pipeline** using **GitHub Actions** to automate and streamline the deployment of the company services to Azure, enhanching the **deployment efficiency** and reducing **manual errors**.
-          - Maintain a **Kafka cluster** on **Kubernetes**, ensuring **1k+** messages per second with **99.9%** uptime.
-          - Consolidate **100+ communication groups** from multiple platforms into a **single platform**.
-          # - Charted an **open-source communication** system using open source software, consolidating **100+ groups** from multiple platforms into a **single**, **streamlined** solution.
-          - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
-      - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
-        position: Junior Software Engineer
-        location: Dhaka, Bangladesh
-        start_date: 2023-11
-        end_date: 2024-06
-        highlights:
-          - Implemented **JUnit tests** integrated with **GitHub Actions** reducing the Quality Assurance (QA) effort by **70%**.
-          - Designed a **microservice-based architecture** for the company's flagship product, Pridesys ERP.
-          # - Implemented **JUnit tests** integrated with **GitHub Actions** to ensure code quality and significantly reduced the need for manual testing.
-          - '**Tools Used**: Spring Boot, Docker, GitHub Actions, JUnit'
-      - company: '[Durjoy DSS](https://www.linkedin.com/company/durjoy/)'
-        position: Junior Frontend Developer
-        location: Dhaka, Bangladesh
-        start_date: 2021-07
-        end_date: 2022-01
-        highlights: 
-          - Developed a **mobile application** using **Java** and **Android Studio** that allowed users to track their daily expenses.
-          # - Redesined a user friendly **UI** that increased the user engagement.
-          - Published **2 applications** on the **Google Play Store** with **500 downloads**.
-          - '**Tools Used**: Java, Android, Android Studio, Room Database, REST API.'
-    
-    open_source_contributions:
-      - name: '[Render CV](https://rendercv.com/)'
-        date: '[PR #166](https://github.com/rendercv/rendercv/pull/166)'
-        highlights:
-        # - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
-        - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, used by **1k+** users.
-        - '**Tools Used**: Python, YAML, Jinja2'
-      
-
+      - bullet: '**AI driven health diagnostics**, **Disease detection model development** (Multimodal Data Fusion; Explainable AI for Clinical Trust)'
+      - bullet: '**Scalable AI Systems** in Clinical Settings and **Deployment Frameworks** (Real-time Inference Pipelines; Privacy-Preserving Machine Learning on collected Patient Data)'
     education:
       - institution: Bangladesh University of Engineering & Technology
         area: Computer Science & Engineering
@@ -69,31 +21,98 @@ cv:
         start_date: 2019-04
         end_date: 2024-05
         highlights:
-        # todo: add relevant links
-          # - 'GPA: 3.63/4.0'
-          - '**Coursework:** Computer Architecture, Computer Networks, Algorithms, Operating Systems, Software Engineering'
+          - 'GPA: **3.63/4.0**'
+          - '**Coursework:** Machine Learning, Bioinformatics, Artificial Intelligence, Software Engineering, Information Systems and Design, Data Structures & Algorithms, Operating Systems'
+    research_experience:
+      - name: 'A Deep Learning approach for predicting Post Traumatic Stress Disorder (PTSD) via Computer Vision & Questionnaire'
+        date: 2024-05
+        highlights:
+          - 'Built an **end-to-end platform** to capture synchronized **video recordings** and **22 question empirical responses**, yielding a synchronized multimodal dataset of **92 participants**'
+          - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
+          - 'Demonstrated that models trained on combined **facial-expression + questionnaire** inputs outperformed **questionnaire-only** classifiers, validating the added value of **computer-vision** features in PTSD risk prediction'
+    experience:
+      - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
+        position: Software Engineer II
+        location: Dhaka, Bangladesh
+        start_date: 2024-06
+        end_date: present
+        # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
+        highlights:
+          - "Design and Implement of **end-to-end machine learning pipelines** (Python, Airflow, TensorFlow) for **demand forecasting** within ERP's garments module"
+          - 'Build **ETL workflows** to aggregate sales, production and inventory data from PostgreSQL into feature stores for **real-time inference**'
+          # - 'Integrate predictive analytics APIs into the backend (Spring Boot microservices), enabling automatic reorder suggestions and dynamic pricing models'
+          - 'Containerize **ML components** with **Docker and Kubernetes**, reducing deployment time by **40%** and ensuring high availability in production'
+          - 'Collaborate with **product** and **quality assirance** teams to benchmark model performance and enforce **data-quality checks** across the pipeline'
+
+      - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
+        position: Junior Software Engineer
+        location: Dhaka, Bangladesh
+        start_date: 2023-11
+        end_date: 2024-06
+        highlights:
+          - 'Built initial **feature-engineering pipelines** for sales and inventory time-series data using Python (Pandas, SQL), laying groundwork for demand-forecasting models'
+          - 'Automated data ingestion workflows with Airflow, orchestrating ETL jobs that feed structured datasets into ML readiness stores for downstream experimentation'
+          - 'Collaborated on a proof-of-concept **explainable AI** integration (SHAP) within internal dashboards to surface model insights and increase stakeholder trust'
+          - 'Designed and developed a **microservice-based architecture** (Spring Boot, Docker) for Pridesys ERP, enabling modular deployment of data processing workloads'
+          # - 'Implemented **JUnit tests** integrated with **GitHub Actions**, reducing QA effort by **70%** and establishing continuous integration for early-stage ML service prototypes'
+
+      # - company: '[Durjoy DSS](https://www.linkedin.com/company/durjoy/)'
+      #   position: Junior Frontend Developer
+      #   location: Dhaka, Bangladesh
+      #   start_date: 2021-07
+      #   end_date: 2022-01
+      #   highlights: 
+      #     - Developed a **mobile application** using **Java** and **Android Studio** that allowed users to track their daily expenses.
+      #     # - Redesined a user friendly **UI** that increased the user engagement.
+      #     - Published **2 applications** on the **Google Play Store** with **500 downloads**.
+      #     - '**Tools Used**: Java, Android, Android Studio, Room Database, REST API.'
+    
+    open_source_contributions:
+      - name: '[Render CV](https://rendercv.com/)'
+        date: '[PR #166](https://github.com/rendercv/rendercv/pull/166)'
+        highlights:
+        # - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
+        - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, used by **1k+** users.
+        - '**Tools Used**: Python, YAML, Jinja2'
+      - name: '[Plane Helm Chart](https://plane.so/)'
+        date: '[PR #121](https://github.com/makeplane/helm-charts/pull/121)'
+        highlights:
+        - Added the **node-selector**, **tolerations** and **affinity** to the **Plane Community Edition Helm Chart** to support **Kubernetes** deployments on **Kubernetes ** clusters.
+        - '**Tools Used**: Helm, Kubernetes, YAML'
 
     projects:
-      - name: Dynamic Document Parser
+      - name: OCR based Document Parser
         date: '[GitHub Organization](https://github.com/CSE-408-B1)'
         highlights:
           - Developed **web based application** on top of **Tesseract OCR** following **microservice architecture** for parsing and extracting data from documents.
+          - Cut down the data entry time from **3 days** to **30 minutes**.
           - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
+      - name: Transformer based anomaly detection in ECG signals
+        date: '[Git Repository](https://github.com/akib1689/CSE-472/tree/main/Project)'
+        highlights:
+          - Developed a **Transformer based model** to detect anomalies in **ECG signals** using **Tensorflow**, **Skit-learn** and **Pandas**.
+          - '**Tools Used**: Python, PyTorch, Flask, JavaScript, HTML, CSS'
+      - name: Custom Operating System
+        date: '[Git Repository](https://github.com/akib1689/CSE_314)'
+        highlights:
+          - Built a **UNIX-style** OS with a **scheduler**, **memory management** and **file system** on top of the **xv6** operating system.
+          - '**Tools Used**: C++'
       # - name: Typing tool for Developers
       #   date: '[Git Repository](https://github.com/akib1689/Typing_tool)'
       #   highlights:
       #     - Developed **typing tool** for the developers that searches for the random code snippets from the GitHub to improve their typing speed and accuracy.
       #     - '**Tools Used**: JavaScript, Node.js'
-      # - name: Custom Operating System
-      #   date: '[Git Repository](https://github.com/akib1689/CSE_314)'
-      #   highlights:
-      #     - Built a **UNIX-style** OS with a **scheduler**, **memory management** and **file system** on top of the **xv6** operating system.
-      #     - '**Tools Used**: C++'
-      # - name: IMDB Clone for android
-      #   date: '[Git Repository](https://github.com/akib1689/TVShows)'
-      #   highlights:
-      #     - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
-      #     - '**Tools Used**: Java, Android, REST API'
+      - name: C Compiler
+        date: '[Git Repository]()'
+        highlights:
+          - Developed a **Turing complete C compiler** that can compile and output **assembly code** for a subset of the C language.
+          - Implemented **lexical analysis**, **parsing**, and **semantic analysis**.
+          - '**Tools Used**: C, Lex, Yacc'
+      - name: IMDB Clone for android
+        date: '[Git Repository](https://github.com/akib1689/TVShows)'
+        highlights:
+          - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
+          - '**Tools Used**: Java, Android, REST API'
       - name: Home Lab Setup
         date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
         highlights:
@@ -102,59 +121,60 @@ cv:
           # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
           - '**Tools Used**: Docker, Docker Compose'
     skills:
-      # - label: Core Languages
-      #   details: C, C++, Java, Python, JavaScript, Bash
-      # - label: DevOps & GitOps
-      #   details: Kubernetes, Docker, Helm, Jenkins, GitHub Actions, OpenTofu, Terraform, Kafka
-      # - label: Testing & Automation
-      #   details: JUnit, Mockito, JaCoCo, Playwright, Selenium, GitHub Actions
-      - label: Frontend Frameworks
-        details: Android, React, Vue, Next.js, HTML, CSS, Tailwind CSS
-      - label: Cloud Computing & DevOps
-        details: Azure, AWS, Kubernetes, Docker, Helm, Jenkins, GitHub Actions, OpenTofu, Terraform
-      - label: Databases
-        details: MySQL, PostgreSQL, MongoDB
-      - label: Backend Frameworks
-        details: Spring Boot, Node.js, Django
+      - label: Programming Languages
+        details: Python, Java, C++, JavaScript, Bash, Go
+      - label: Machine Learning & Data Science
+        details: scikit-learn, pandas, NumPy, Matplotlib, OpenCV, TensorFlow, PyTorch
+      - label: Research & Experimentation
+        details: Jupyter, Weights & Biases, MLflow, Git, LaTeX
+      - label: Computer Vision & NLP
+        details: OpenCV, MediaPipe, NLTK, spaCy
+      - label: Data Engineering & Pipelines
+        details: SQL, PostgreSQL, MongoDB, Kafka, Apache Airflow
+      # - label: Software Engineering & DevOps
+      #   details: Docker, GitHub Actions, Jenkins, Kubernetes, Terraform
+      # - label: Web & Interface Development
+      #   details: React, Next.js, HTML, CSS, Tailwind CSS
+
       
       
 design:
   theme: engineeringresumes
-  colors:
-    text: rgb(0,0,0)
-    name: rgb(0,0,0)
-    connections: 0077b6
-    section_titles: rgb(0,0,0)
-    links: 0077b6
-    last_updated_date_and_page_numbering: rgb(128,128,128)
+  # colors:
+  #   text: rgb(0,0,0)
+  #   name: rgb(0,0,0)
+  #   connections: 0077b6
+  #   section_titles: rgb(0,0,0)
+  #   links: 0077b6
+  #   last_updated_date_and_page_numbering: rgb(128,128,128)
   links:
     underline: true
     use_external_link_icon: false
   page:
     size: us-letter
-    top_margin: "1cm"
-    bottom_margin: "1cm"
-    left_margin: "1.2cm"
-    right_margin: "1cm"
+    # top_margin: "1cm"
+    # bottom_margin: "1cm"
+    # left_margin: "1.2cm"
+    # right_margin: "1cm"
     show_page_numbering: false
     show_last_updated_date: true
   header:
-    name_font_size: "20pt"
-    name_bold: false
-    # photo_width: "3.5cm"
     vertical_space_between_name_and_connections: "0.5cm"
-    vertical_space_between_connections_and_first_section: "0.6cm"
-    horizontal_space_between_connections: "0.2cm"
-    separator_between_connections: "|"
-    use_icons_for_connections: false
+    vertical_space_between_connections_and_first_section: "0.5cm"
+    horizontal_space_between_connections: "0.3cm"
+    separator_between_connections: ""
     alignment: center
   text:
-    font_family: "Open Sans"
-    font_size: "10pt"
+    font_family: "Calibri"
+    font_size: "11pt"
     leading: "0.6em"
     alignment: justified
     date_and_location_column_alignment: right
+    
   
+locale:
+  phone_number_format: international
+  date_template: MONTH_ABBREVIATION YEAR
 
 rendercv_settings:
   render_command: 
