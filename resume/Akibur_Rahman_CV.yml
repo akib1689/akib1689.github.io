@@ -26,7 +26,7 @@ cv:
           - Automate deployments with **GitHub Actions** reducing manual errors by **90%**.
           # - Implemented a **CI/CD pipeline** using **GitHub Actions** to automate and streamline the deployment of the company services to Azure, enhanching the **deployment efficiency** and reducing **manual errors**.
           - Maintain a **Kafka cluster** on **Kubernetes**, ensuring **1k+** messages per second with **99.9%** uptime.
-          - Consolidate **100+ communication groups** from multiple platforms into a **single platform**.
+          - Deploy and maintain **Mattermost**, consolidating **100+ WhatsApp groups** into a **single platform**.
           # - Charted an **open-source communication** system using open source software, consolidating **100+ groups** from multiple platforms into a **single**, **streamlined** solution.
           - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
@@ -35,10 +35,11 @@ cv:
         start_date: 2023-11
         end_date: 2024-06
         highlights:
-          - Implemented **JUnit tests** integrated with **GitHub Actions** reducing the Quality Assurance (QA) effort by **70%**.
-          - Designed a **microservice-based architecture** for the company's flagship product, Pridesys ERP.
-          # - Implemented **JUnit tests** integrated with **GitHub Actions** to ensure code quality and significantly reduced the need for manual testing.
+          - Integrated **JUnit test suites** with **GitHub Actions CI**, reducing **manual QA effort by 70%**.
+          - Contributed to a microservices architecture for **Pridesys ERP**, cutting average feature rollout time by **40%**.
+          - Containerized services with **Docker**, improving developer onboarding time by **50%**.
           - '**Tools Used**: Spring Boot, Docker, GitHub Actions, JUnit'
+
       - company: '[Durjoy DSS](https://www.linkedin.com/company/durjoy/)'
         position: Junior Frontend Developer
         location: Dhaka, Bangladesh
@@ -55,7 +56,7 @@ cv:
         date: '[PR #166](https://github.com/rendercv/rendercv/pull/166)'
         highlights:
         # - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
-        - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, used by **1k+** users.
+        - Incorporated **rendercv settings** into the **YAML** file, reducing the user setup time of **rendercv** by **20%**.
         - '**Tools Used**: Python, YAML, Jinja2'
       
 
@@ -65,17 +66,17 @@ cv:
         degree: BSc
         # date: 'GPA: **3.63/4.0**'
         start_date: 2019-04
-        end_date: 2024-05
+        end_date: 2024-06
         highlights:
         # todo: add relevant links
           # - 'GPA: 3.63/4.0'
           - '**Coursework:** Computer Architecture, Computer Networks, Algorithms, Operating Systems, Software Engineering'
 
-    projects:
+    personal_projects:
       - name: Dynamic Document Parser
         date: '[GitHub Organization](https://github.com/CSE-408-B1)'
         highlights:
-          - Developed **web based application** on top of **Tesseract OCR** following **microservice architecture** for parsing and extracting data from documents.
+          - Developed a **microservices** based **web application** using **Tesseract** to sustain processing of **150 documents/hour**.
           - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
       # - name: Typing tool for Developers
       #   date: '[Git Repository](https://github.com/akib1689/Typing_tool)'
@@ -95,36 +96,36 @@ cv:
       - name: Home Lab Setup
         date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
         highlights:
-          - Orchestrated **15+ self hosted services** on a single server using **docker compose** reducing monthly SaaS costs by **$50+**. 
+          - Orchestrated **15+ self hosted services** on a single server using **docker compose** reducing monthly SaaS costs by **$70+**. 
           # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
           # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
           - '**Tools Used**: Docker, Docker Compose'
     skills:
-      # - label: Core Languages
-      #   details: C, C++, Java, Python, JavaScript, Bash
+      - label: Core Languages
+        details: C, C++, Java, Python, JavaScript, Bash
       # - label: DevOps & GitOps
       #   details: Kubernetes, Docker, Helm, Jenkins, GitHub Actions, OpenTofu, Terraform, Kafka
       # - label: Testing & Automation
       #   details: JUnit, Mockito, JaCoCo, Playwright, Selenium, GitHub Actions
-      - label: Frontend Frameworks
-        details: Android, React, Vue, Next.js, HTML, CSS, Tailwind CSS
+      - label: Frameworks
+        details: Android, React, Vue, Next.js, HTML, CSS, Tailwind CSS, Spring Boot, Node.js, Django
       - label: Cloud Computing & DevOps
-        details: Azure, AWS, Kubernetes, Docker, Helm, Jenkins, GitHub Actions, OpenTofu, Terraform
+        details: Azure, Kubernetes, Docker, Helm, Kustomize, GitHub Actions, OpenTofu, Terraform
       - label: Databases
         details: MySQL, PostgreSQL, MongoDB
-      - label: Backend Frameworks
-        details: Spring Boot, Node.js, Django
+      # - label: Backend Frameworks
+      #   details: Spring Boot, Node.js, Django
       
       
 design:
   theme: engineeringresumes
-  colors:
-    text: rgb(0,0,0)
-    name: rgb(0,0,0)
-    connections: 0077b6
-    section_titles: rgb(0,0,0)
-    links: 0077b6
-    last_updated_date_and_page_numbering: rgb(128,128,128)
+  # colors:
+  #   text: rgb(0,0,0)
+  #   name: rgb(0,0,0)
+  #   connections: 0077b6
+  #   section_titles: rgb(0,0,0)
+  #   links: 0077b6
+  #   last_updated_date_and_page_numbering: rgb(128,128,128)
   links:
     underline: true
     use_external_link_icon: false
@@ -160,3 +161,6 @@ rendercv_settings:
     pdf_path: './public/Akibur_Rahman_Resume.pdf'
     dont_generate_markdown: true
     dont_generate_png: true
+
+locale:
+  phone_number_format: "international"
