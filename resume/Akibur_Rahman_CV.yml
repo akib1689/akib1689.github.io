@@ -11,8 +11,10 @@ cv:
       username: akib1689
   sections:
     research_interests:
-      - bullet: '**AI driven health diagnostics**, **Disease detection model development** (Multimodal Data Fusion; Explainable AI for Clinical Trust)'
-      - bullet: '**Scalable AI Systems** in Clinical Settings and **Deployment Frameworks** (Real-time Inference Pipelines; Privacy-Preserving Machine Learning on collected Patient Data)'
+      - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
+      # - bullet: '**AI driven diagnostics pipeline**, **Disease detection model development** (Medical Imaging; Computer Vision; NLP; Time-Series Analysis on Sensitive Data)'
+      - bullet: '**Scalable AI Systems** and **Deployment Frameworks** (Real-time Inference Pipelines; Privacy-Preserving Machine Learning Deployments)'
+      - bullet: '**Observable** and **Auditable ML deployments** (CI-integrated monitoring, explainability, and lightweight symbolic checks)'
     education:
       - institution: Bangladesh University of Engineering & Technology
         area: Computer Science & Engineering
@@ -28,9 +30,9 @@ cv:
         date: 2024-05
         highlights:
           - 'Built an **end-to-end platform** to capture synchronized **video recordings** and **22 question empirical responses**, yielding a synchronized multimodal dataset of **92 participants**'
-          - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
+          # - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
           - 'Demonstrated that models trained on combined **facial-expression + questionnaire** inputs outperformed **questionnaire-only** classifiers, validating the added value of **computer-vision** features in PTSD risk prediction'
-    experience:
+    professional_experience:
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
         position: Software Engineer II
         location: Dhaka, Bangladesh
@@ -38,11 +40,16 @@ cv:
         end_date: present
         # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
         highlights:
-          - "Design and Implement of **end-to-end machine learning pipelines** (Python, Airflow, TensorFlow) for **demand forecasting** within ERP's garments module"
-          - 'Build **ETL workflows** to aggregate sales, production and inventory data from PostgreSQL into feature stores for **real-time inference**'
+          - 'Launch **BeeBook** platform, onboarding **50** beta users, achieving **99.9%** uptime and cutting manual accounting effort by **70%**.'
+          - ' Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs by **25%**.'
+          - 'Automate deployments with **GitHub Actions** reducing manual errors by **90%** and deployment time by **50%**.'
+          - Maintain a **Kafka cluster** on **Kubernetes**, ensuring a throughput of **1k+** messages per second with **99.9%** uptime.
+          - Deploy and maintain **Mattermost** (a secure collaboration platform), for **150+ users** and **25+ teams**.
+          - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
+          # - 'Build **ETL workflows** to aggregate sales, production and inventory data from PostgreSQL into feature stores for **real-time inference**'
           # - 'Integrate predictive analytics APIs into the backend (Spring Boot microservices), enabling automatic reorder suggestions and dynamic pricing models'
-          - 'Containerize **ML components** with **Docker and Kubernetes**, reducing deployment time by **40%** and ensuring high availability in production'
-          - 'Collaborate with **product** and **quality assirance** teams to benchmark model performance and enforce **data-quality checks** across the pipeline'
+          # - 'Containerize **ML components** with **Docker and Kubernetes**, reducing deployment time by **40%** and ensuring high availability in production'
+          # - 'Collaborate with **product** and **quality assurance** teams to benchmark model performance and enforce **data-quality checks** across the pipeline'
 
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
         position: Junior Software Engineer
@@ -50,22 +57,26 @@ cv:
         start_date: 2023-11
         end_date: 2024-06
         highlights:
-          - 'Built initial **feature-engineering pipelines** for sales and inventory time-series data using Python (Pandas, SQL), laying groundwork for demand-forecasting models'
-          - 'Automated data ingestion workflows with Airflow, orchestrating ETL jobs that feed structured datasets into ML readiness stores for downstream experimentation'
-          - 'Collaborated on a proof-of-concept **explainable AI** integration (SHAP) within internal dashboards to surface model insights and increase stakeholder trust'
-          - 'Designed and developed a **microservice-based architecture** (Spring Boot, Docker) for Pridesys ERP, enabling modular deployment of data processing workloads'
+          - Integrated **JUnit test suites** with **GitHub Actions CI**, reducing **manual QA effort by 70%**.
+          - Contributed to a microservices architecture for **Pridesys ERP**, cutting average feature rollout time by **40%**.
+          - Containerized services with **Docker**, improving developer onboarding time by **50%**.
+          - '**Tools Used**: Spring Boot, Docker, GitHub Actions, JUnit'
+          # - 'Built initial **feature-engineering pipelines** for sales and inventory time-series data using Python (Pandas, SQL), laying groundwork for demand-forecasting models'
+          # - 'Automated data ingestion workflows with Airflow, orchestrating ETL jobs that feed structured datasets into ML readiness stores for downstream experimentation'
+          # - 'Collaborated on a proof-of-concept **explainable AI** integration (SHAP) within internal dashboards to surface model insights and increase stakeholder trust'
+          # - 'Designed and developed a **microservice-based architecture** (Spring Boot, Docker) for Pridesys ERP, enabling modular deployment of data processing workloads'
           # - 'Implemented **JUnit tests** integrated with **GitHub Actions**, reducing QA effort by **70%** and establishing continuous integration for early-stage ML service prototypes'
 
-      # - company: '[Durjoy DSS](https://www.linkedin.com/company/durjoy/)'
-      #   position: Junior Frontend Developer
-      #   location: Dhaka, Bangladesh
-      #   start_date: 2021-07
-      #   end_date: 2022-01
-      #   highlights: 
-      #     - Developed a **mobile application** using **Java** and **Android Studio** that allowed users to track their daily expenses.
-      #     # - Redesined a user friendly **UI** that increased the user engagement.
-      #     - Published **2 applications** on the **Google Play Store** with **500 downloads**.
-      #     - '**Tools Used**: Java, Android, Android Studio, Room Database, REST API.'
+      - company: '[Durjoy DSS](https://www.linkedin.com/company/durjoy/)'
+        position: Junior Frontend Developer
+        location: Dhaka, Bangladesh
+        start_date: 2021-07
+        end_date: 2022-01
+        highlights: 
+          - Developed a **mobile application** using **Java** and **Android Studio** that allowed users to track their daily expenses.
+          # - Redesined a user friendly **UI** that increased the user engagement.
+          - Published **2 applications** on the **Google Play Store** with **500 downloads**.
+          - '**Tools Used**: Java, Android, Android Studio, Room Database, REST API.'
     
     open_source_contributions:
       - name: '[Render CV](https://rendercv.com/)'
@@ -79,13 +90,18 @@ cv:
         highlights:
         - Added the **node-selector**, **tolerations** and **affinity** to the **Plane Community Edition Helm Chart** to support **Kubernetes** deployments on **Kubernetes ** clusters.
         - '**Tools Used**: Helm, Kubernetes, YAML'
+      - name: '[Wiki.js](https://js.wiki/)'
+        date: '[PR #7766](https://github.com/requarks/wiki/pull/7766)'
+        highlights:
+          - Introduced **GitHub** style **callouts** and **alerts** to enhance content emphasis and user engagement within **Wiki.js** documentation pages.
+          - '**Tools Used**: JavaScript, Vue.js, Markdown, Docker'
 
     projects:
       - name: OCR based Document Parser
         date: '[GitHub Organization](https://github.com/CSE-408-B1)'
         highlights:
-          - Developed **web based application** on top of **Tesseract OCR** following **microservice architecture** for parsing and extracting data from documents.
-          - Cut down the data entry time from **3 days** to **30 minutes**.
+          - Developed a **microservices** based **web application** using **Tesseract**. Achieved a sustained processing of **150 documents/hour**.
+          - Cut down the data entry time for **primary school students' submissions** from **3 days** to **30 minutes**.
           - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
       - name: Transformer based anomaly detection in ECG signals
         date: '[Git Repository](https://github.com/akib1689/CSE-472/tree/main/Project)'
@@ -116,7 +132,7 @@ cv:
       - name: Home Lab Setup
         date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
         highlights:
-          - Orchestrated **15+ self hosted services** on a single server using **docker compose** reducing monthly SaaS costs by **$50+**. 
+          - Orchestrated **15+ self hosted services** on a single server using **docker compose** reducing monthly SaaS costs by **$70+**. 
           # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
           # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
           - '**Tools Used**: Docker, Docker Compose'
@@ -131,8 +147,8 @@ cv:
         details: OpenCV, MediaPipe, NLTK, spaCy
       - label: Data Engineering & Pipelines
         details: SQL, PostgreSQL, MongoDB, Kafka, Apache Airflow
-      # - label: Software Engineering & DevOps
-      #   details: Docker, GitHub Actions, Jenkins, Kubernetes, Terraform
+      - label: Software Engineering & DevOps
+        details: Docker, GitHub Actions, Jenkins, Kubernetes, Terraform
       # - label: Web & Interface Development
       #   details: React, Next.js, HTML, CSS, Tailwind CSS
 
@@ -154,8 +170,8 @@ design:
     size: us-letter
     # top_margin: "1cm"
     # bottom_margin: "1cm"
-    # left_margin: "1.2cm"
-    # right_margin: "1cm"
+    left_margin: "1cm"
+    right_margin: "1cm"
     show_page_numbering: false
     show_last_updated_date: true
   header:
@@ -165,7 +181,7 @@ design:
     separator_between_connections: ""
     alignment: center
   text:
-    font_family: "Calibri"
+    # font_family: 'Roboto'
     font_size: "11pt"
     leading: "0.6em"
     alignment: justified
