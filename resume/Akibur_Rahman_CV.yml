@@ -124,13 +124,6 @@ cv:
       
 design:
   theme: engineeringresumes
-  # colors:
-  #   text: rgb(0,0,0)
-  #   name: rgb(0,0,0)
-  #   connections: 0077b6
-  #   section_titles: rgb(0,0,0)
-  #   links: 0077b6
-  #   last_updated_date_and_page_numbering: rgb(128,128,128)
   links:
     underline: true
     use_external_link_icon: false
@@ -145,13 +138,15 @@ design:
   header:
     name_font_size: "20pt"
     name_bold: false
-    # photo_width: "3.5cm"
     vertical_space_between_name_and_connections: "0.5cm"
     vertical_space_between_connections_and_first_section: "0.6cm"
     horizontal_space_between_connections: "0.2cm"
     separator_between_connections: "|"
-    use_icons_for_connections: false
+    use_icons_for_connections: true
     alignment: center
+  entry_types:
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION**, DEGREE AREA'
   text:
     font_family: "Open Sans"
     font_size: "10pt"
