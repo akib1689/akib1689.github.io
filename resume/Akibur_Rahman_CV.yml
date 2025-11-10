@@ -40,6 +40,7 @@ cv:
         end_date: present
         # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
         highlights:
+          - Built a **privacy-preserving AI agent** capable of performing financial operations and generating insights **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
           - 'Launch **BeeBook** platform, onboarding **50** users, achieving **99.9%** uptime and cutting accounting effort by **70%**.'
           - ' Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs by **25%**.'
           - Maintain a **Kafka cluster** on **Kubernetes**, ensuring a throughput of **1k+** messages per second with **99.9%** uptime.
@@ -106,7 +107,7 @@ cv:
       - name: Transformer based anomaly detection in ECG signals
         date: '[Git Repository](https://github.com/akib1689/CSE-472/tree/main/Project)'
         highlights:
-          - Developed a **Transformer based model** to detect anomalies in **ECG signals** using **Tensorflow**, **Skit-learn** and **Pandas**.
+          - Developed a **Transformer based model** to detect anomalies in **ECG signals** using **Tensorflow**, **Skit-learn**.
           - '**Tools Used**: Python, PyTorch, Flask, JavaScript, HTML, CSS'
       - name: Custom Operating System
         date: '[Git Repository](https://github.com/akib1689/CSE_314)'
@@ -156,20 +157,11 @@ cv:
       
 design:
   theme: engineeringresumes
-  # colors:
-  #   text: rgb(0,0,0)
-  #   name: rgb(0,0,0)
-  #   connections: 0077b6
-  #   section_titles: rgb(0,0,0)
-  #   links: 0077b6
-  #   last_updated_date_and_page_numbering: rgb(128,128,128)
   links:
     underline: true
     use_external_link_icon: false
   page:
     size: us-letter
-    # top_margin: "1cm"
-    # bottom_margin: "1cm"
     left_margin: "1cm"
     right_margin: "1cm"
     show_page_numbering: false
