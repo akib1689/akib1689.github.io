@@ -12,7 +12,7 @@ cv:
   sections:
     summary:
       - Full Stack Engineer with **2+ years of experience** building scalable backend systems (Spring Boot, Node.js), dynamic frontend (React, Next.js), and automating DevOps workflows.
-      - Built a **privacy-preserving AI agent** that integrates with the **BeeBook** accounting system to perform financial operations and reporting **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
+      - Built a **privacy-preserving AI agent** capable of performing financial operations and generating insights **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
     experience:
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
         position: Software Engineer II
