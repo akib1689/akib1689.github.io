@@ -18,13 +18,13 @@ cv:
     education:
       - institution: Bangladesh University of Engineering & Technology
         area: Computer Science & Engineering
-        degree: BSc
+        degree: Bachelor of Science (B.Sc.)
         # date: 'GPA: **3.63/4.0**'
         start_date: 2019-04
         end_date: 2024-05
         highlights:
           - 'GPA: **3.63/4.0**'
-          - '**Coursework:** Machine Learning, Bioinformatics, Artificial Intelligence, Software Engineering, Information Systems and Design, Data Structures & Algorithms, Operating Systems'
+          - '**Notable Coursework:** Machine Learning, Bioinformatics, Artificial Intelligence, Software Engineering, Information Systems and Design, Data Structures & Algorithms, Operating Systems'
     research_experience:
       - name: 'A Deep Learning approach for predicting Post Traumatic Stress Disorder (PTSD) via Computer Vision & Questionnaire'
         date: 2024-05
@@ -32,6 +32,14 @@ cv:
           - 'Built an **end-to-end platform** to capture synchronized **video recordings** and **22 question empirical responses**, yielding a synchronized multimodal dataset of **92 participants**'
           # - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
           - 'Demonstrated that models trained on combined **facial-expression + questionnaire** inputs outperformed **questionnaire-only** classifiers, validating the added value of **computer-vision** features in PTSD risk prediction'
+    publications:
+      - title: 'A Multimodal Approach: Enhancing PTSD Diagnosis with AI-Powered Behavioral Analysis [*In Review*]'
+        authors:
+          - Anika Monir
+          - Akibur Rahman
+          - Sadia Sharmin
+        date: 2025-11
+        journal: 9th International Conference on Algorithms, Computing and Systems
     professional_experience:
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
         position: Software Engineer II
@@ -60,7 +68,7 @@ cv:
           - 'Automate deployments with **GitHub Actions** reducing manual errors by **90%** and deployment time by **50%**.'
           - Integrated **JUnit test suites** with **GitHub Actions CI**, reducing **manual QA effort by 70%**.
           - Contributed to a microservices architecture for **Pridesys ERP**, cutting average feature rollout time by **40%**.
-          - Containerized services with **Docker**, improving developer onboarding time by **50%**.
+          # - Containerized services with **Docker**, improving developer onboarding time by **50%**.
           - '**Tools Used**: Spring Boot, Docker, GitHub Actions, JUnit'
           # - 'Built initial **feature-engineering pipelines** for sales and inventory time-series data using Python (Pandas, SQL), laying groundwork for demand-forecasting models'
           # - 'Automated data ingestion workflows with Airflow, orchestrating ETL jobs that feed structured datasets into ML readiness stores for downstream experimentation'
@@ -125,15 +133,15 @@ cv:
           - Developed a **Turing complete C compiler** that can compile and output **assembly code** for a subset of the C language.
           - Implemented **lexical analysis**, **parsing**, and **semantic analysis**.
           - '**Tools Used**: C, Lex, Yacc'
-      - name: IMDB Clone for android
-        date: '[Git Repository](https://github.com/akib1689/TVShows)'
-        highlights:
-          - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
-          - '**Tools Used**: Java, Android, REST API'
+      # - name: IMDB Clone for android
+      #   date: '[Git Repository](https://github.com/akib1689/TVShows)'
+      #   highlights:
+      #     - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
+      #     - '**Tools Used**: Java, Android, REST API'
       - name: Home Lab Setup
         date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
         highlights:
-          - Orchestrated **15+ self hosted services** on a single server using **docker compose** reducing monthly SaaS costs by **$70+**. 
+          - Orchestrated **15+ self hosted services** using **docker compose** reducing monthly SaaS costs by **$70+**. 
           # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
           # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
           - '**Tools Used**: Docker, Docker Compose'
@@ -178,7 +186,9 @@ design:
     leading: "0.6em"
     alignment: justified
     date_and_location_column_alignment: right
-    
+  entry_types:
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION** \nDEGREE AREA -- LOCATION'    
   
 locale:
   phone_number_format: international
