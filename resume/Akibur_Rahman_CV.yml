@@ -68,7 +68,7 @@ cv:
     education:
       - institution: Bangladesh University of Engineering & Technology
         area: Computer Science & Engineering
-        degree: BSc
+        degree: Bachelor of Science (B.Sc.)
         # date: 'GPA: **3.63/4.0**'
         start_date: 2019-04
         end_date: 2024-06
@@ -146,7 +146,7 @@ design:
     alignment: center
   entry_types:
     education_entry:
-      main_column_first_row_template: '**INSTITUTION**, DEGREE AREA'
+      main_column_first_row_template: '**INSTITUTION**, \nDEGREE in AREA'
   text:
     font_family: "Open Sans"
     font_size: "10pt"
