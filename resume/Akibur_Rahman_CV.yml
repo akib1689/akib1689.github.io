@@ -33,7 +33,7 @@ cv:
           # - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
           - 'Demonstrated that models trained on combined **facial-expression + questionnaire** inputs outperformed **questionnaire-only** classifiers, validating the added value of **computer-vision** features in PTSD risk prediction'
     publications:
-      - title: 'A Multimodal Approach: Enhancing PTSD Diagnosis with AI-Powered Behavioral Analysis [*In Review*]'
+      - title: 'A Multimodal Approach: Enhancing PTSD Diagnosis with AI-Powered Behavioral Analysis [*Accepted*]'
         authors:
           - Anika Monir
           - Akibur Rahman
