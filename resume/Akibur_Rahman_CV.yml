@@ -12,7 +12,7 @@ cv:
   sections:
     summary:
       - Full Stack Engineer with **2+ years of experience** building scalable backend systems (Spring Boot, Node.js), dynamic frontend (React, Next.js), and automating DevOps workflows.
-      - Successfully migrated legacy systems to Azure, reduced deployment errors by **90%** via **CI/CD pipelines**, and maintained **Kafka clusters** for real-time data streaming.
+      - Built a **privacy-preserving AI agent** capable of performing financial operations and generating insights **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
     experience:
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
         position: Software Engineer II
@@ -68,7 +68,7 @@ cv:
     education:
       - institution: Bangladesh University of Engineering & Technology
         area: Computer Science & Engineering
-        degree: BSc
+        degree: Bachelor of Science (B.Sc.)
         # date: 'GPA: **3.63/4.0**'
         start_date: 2019-04
         end_date: 2024-06
@@ -124,13 +124,6 @@ cv:
       
 design:
   theme: engineeringresumes
-  # colors:
-  #   text: rgb(0,0,0)
-  #   name: rgb(0,0,0)
-  #   connections: 0077b6
-  #   section_titles: rgb(0,0,0)
-  #   links: 0077b6
-  #   last_updated_date_and_page_numbering: rgb(128,128,128)
   links:
     underline: true
     use_external_link_icon: false
@@ -145,13 +138,15 @@ design:
   header:
     name_font_size: "20pt"
     name_bold: false
-    # photo_width: "3.5cm"
     vertical_space_between_name_and_connections: "0.5cm"
     vertical_space_between_connections_and_first_section: "0.6cm"
     horizontal_space_between_connections: "0.2cm"
     separator_between_connections: "|"
-    use_icons_for_connections: false
+    use_icons_for_connections: true
     alignment: center
+  entry_types:
+    education_entry:
+      main_column_first_row_template: '**INSTITUTION**, \nDEGREE in AREA'
   text:
     font_family: "Open Sans"
     font_size: "10pt"
