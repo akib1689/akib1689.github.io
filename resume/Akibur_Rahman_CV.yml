@@ -27,7 +27,8 @@ cv:
           - Automate deployments with **GitHub Actions** reducing manual errors by **90%**.
           # - Implemented a **CI/CD pipeline** using **GitHub Actions** to automate and streamline the deployment of the company services to Azure, enhanching the **deployment efficiency** and reducing **manual errors**.
           - Maintain a **Kafka cluster** on **Kubernetes**, ensuring **1k+** messages per second with **99.9%** uptime.
-          - Deploy and maintain **Mattermost**, consolidating **100+ WhatsApp groups** into a **single platform**.
+          # - Deploy and maintain **Mattermost**, consolidating **100+ WhatsApp groups** into a **single platform**.
+          - Build **multi-tenant RBAC** using **Keycloak** to support organization scoped roles and API-level permissions. Cut auth dev effort by **25%** and eliminated **2.4K+ LOC** across services.
           # - Charted an **open-source communication** system using open source software, consolidating **100+ groups** from multiple platforms into a **single**, **streamlined** solution.
           - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
@@ -70,6 +71,7 @@ cv:
         area: Computer Science & Engineering
         degree: Bachelor of Science (B.Sc.)
         # date: 'GPA: **3.63/4.0**'
+        location: Dhaka, Bangladesh
         start_date: 2019-04
         end_date: 2024-06
         highlights:
@@ -126,41 +128,65 @@ design:
   theme: engineeringresumes
   links:
     underline: true
-    use_external_link_icon: false
+    show_external_link_icon: false
   page:
     size: us-letter
     top_margin: "1cm"
     bottom_margin: "1cm"
-    left_margin: "1.2cm"
+    left_margin: "1cm"
     right_margin: "1cm"
-    show_page_numbering: false
-    show_last_updated_date: true
+    show_footer: false
+    show_top_note: true
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: "0.1cm"
+    space_between_text_based_entries: "0.05cm"
   header:
-    name_font_size: "20pt"
-    name_bold: false
-    vertical_space_between_name_and_connections: "0.5cm"
-    vertical_space_between_connections_and_first_section: "0.6cm"
-    horizontal_space_between_connections: "0.2cm"
-    separator_between_connections: "|"
-    use_icons_for_connections: true
-    alignment: center
-  entry_types:
+    space_below_name: "0.5cm"
+    space_below_connections: "0.5cm"
+    connections:
+      phone_number_format: international
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: true
+      separator: '|'
+      space_between_connections: "0.2cm"
+  section_titles:
+    type: with_partial_line
+    line_thickness: "0.5pt"
+    space_above: "0.4cm"
+    space_below: "0.25cm"
+  entries:
+    date_and_location_width: "4.15cm"
+    side_space: "0cm"
+    space_between_columns: "0.1cm"
+    allow_page_break: false
+    short_second_row: false
+    highlights:
+      bullet: ●
+      nested_bullet: ●
+      space_left: "0.05cm"
+      space_above: "0.04cm"
+      space_between_items: "0cm"
+      space_between_bullet_and_text: "0.3em"
+  templates:
+    footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
+    top_note: '*LAST_UPDATED CURRENT_DATE*'
+    single_date: MONTH_ABBREVIATION YEAR
+    date_range: START_DATE – END_DATE
+    time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
     education_entry:
-      main_column_first_row_template: '**INSTITUTION**, \nDEGREE in AREA'
-  text:
-    font_family: "Open Sans"
-    font_size: "10pt"
-    leading: "0.6em"
-    alignment: justified
-    date_and_location_column_alignment: right
+      main_column: |-
+        **INSTITUTION**, DEGREE
+        AREA -- LOCATION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
   
 
-rendercv_settings:
+settings:
   render_command: 
-    output_folder_name: 'rendercv-output'
-    pdf_path: './public/Akibur_Rahman_Resume.pdf'
+    pdf_path: '../public/Akibur_Rahman_Resume.pdf'
     dont_generate_markdown: true
+    dont_generate_html: true
     dont_generate_png: true
-
-locale:
-  phone_number_format: "international"
