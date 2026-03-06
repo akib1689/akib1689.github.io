@@ -1,1 +1,1 @@
-rendercv[full]
+rendercv[full]==2.5

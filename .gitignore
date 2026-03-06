@@ -40,7 +40,7 @@ yarn-error.log*
 next-env.d.ts
 
 # rendercv output
-rendercv-output
+*/rendercv_output/*
 
 # resume pdfs
 *.pdf

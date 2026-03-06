@@ -1,14 +1,13 @@
 "use client";
 // file to hold the left portion of the profile page
-import * as React from 'react';
 
 
 // profile avatar
-import { 
-    Avatar, 
-    AvatarFallback, 
-    AvatarImage 
-} from "@/components/ui/avatar"
+import {
+    Avatar,
+    AvatarFallback,
+    AvatarImage
+} from "@/components/ui/avatar";
 
 // card component
 import {
@@ -17,17 +16,17 @@ import {
     CardDescription,
     CardHeader,
     CardTitle
-} from "@/components/ui/card"
+} from "@/components/ui/card";
 
 // seperator
 import {
     Separator
-} from "@/components/ui/separator"
+} from "@/components/ui/separator";
 
 // badge
 import {
     Badge
-} from "@/components/ui/badge"
+} from "@/components/ui/badge";
 
 import { skills } from '@/lib/skills-list';
 
@@ -68,12 +67,12 @@ export function ProfileLeft() {
                         <span className='font-medium'>✉ Email:</span> 
                         <span className='ml-2'>
                             <Button variant='link' className='px-0'>
-                                <a href='mailto:ak.akibur.rahman+profilee@gmail.com'> ak.akibur.rahman@gmail.com</a>
+                                <a href='mailto:ak.akibur.rahman@gmail.com'> ak.akibur.rahman@gmail.com</a>
                             </Button>
                         </span>
                         <br/>
                         <span className='font-medium'>📞 Phone:</span>
-                        <span className='ml-2'>+880 1550 008 035</span>
+                        <span className='ml-2'>+8801715087184</span>
                         <br/>
                         <span className='font-medium'>🏠 Address:</span>
                         <span className='ml-2'>Dhaka, Bangladesh</span>
