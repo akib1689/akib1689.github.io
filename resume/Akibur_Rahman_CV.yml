@@ -1,8 +1,8 @@
 cv:
   name: Akibur Rahman
-  # location: Dhaka, Bangladesh
+  location: Dhaka, Bangladesh
   email: ak.akibur.rahman@gmail.com
-  phone: tel:+880-1521-70-52-98
+  phone: tel:+8801715087184
   website: https://akibur-rahman.com/
   social_networks:
     - network: LinkedIn
@@ -39,6 +39,7 @@ cv:
           - Akibur Rahman
           - Sadia Sharmin
         date: 2025-11
+        doi: '10.1109/ACOS57278.2024.00009'
         journal: 9th International Conference on Algorithms, Computing and Systems
     professional_experience:
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
@@ -127,24 +128,24 @@ cv:
       #   highlights:
       #     - Developed **typing tool** for the developers that searches for the random code snippets from the GitHub to improve their typing speed and accuracy.
       #     - '**Tools Used**: JavaScript, Node.js'
-      - name: C Compiler
-        date: '[Git Repository]()'
-        highlights:
-          - Developed a **Turing complete C compiler** that can compile and output **assembly code** for a subset of the C language.
-          - Implemented **lexical analysis**, **parsing**, and **semantic analysis**.
-          - '**Tools Used**: C, Lex, Yacc'
-      # - name: IMDB Clone for android
-      #   date: '[Git Repository](https://github.com/akib1689/TVShows)'
+      # - name: C Compiler
+      #   date: '[Git Repository]()'
       #   highlights:
-      #     - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
-      #     - '**Tools Used**: Java, Android, REST API'
-      - name: Home Lab Setup
-        date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
-        highlights:
-          - Orchestrated **15+ self hosted services** using **docker compose** reducing monthly SaaS costs by **$70+**. 
-          # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
-          # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
-          - '**Tools Used**: Docker, Docker Compose'
+      #     - Developed a **Turing complete C compiler** that can compile and output **assembly code** for a subset of the C language.
+      #     - Implemented **lexical analysis**, **parsing**, and **semantic analysis**.
+      #     - '**Tools Used**: C, Lex, Yacc'
+    #   # - name: IMDB Clone for android
+    #   #   date: '[Git Repository](https://github.com/akib1689/TVShows)'
+    #   #   highlights:
+    #   #     - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
+    #   #     - '**Tools Used**: Java, Android, REST API'
+    #   - name: Home Lab Setup
+    #     date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
+    #     highlights:
+    #       - Orchestrated **15+ self hosted services** using **docker compose** reducing monthly SaaS costs by **$70+**. 
+    #       # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
+    #       # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
+    #       - '**Tools Used**: Docker, Docker Compose'
     skills:
       - label: Programming Languages
         details: Python, Java, C++, JavaScript, Bash, Go
@@ -162,41 +163,69 @@ cv:
       #   details: React, Next.js, HTML, CSS, Tailwind CSS
 
       
-      
 design:
   theme: engineeringresumes
   links:
     underline: true
-    use_external_link_icon: false
+    show_external_link_icon: false
   page:
-    size: us-letter
+    size: a4
+    top_margin: "1cm"
+    bottom_margin: "1cm"
     left_margin: "1cm"
     right_margin: "1cm"
-    show_page_numbering: false
-    show_last_updated_date: true
+    show_footer: false
+    show_top_note: true
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: "0.1cm"
+    space_between_text_based_entries: "0.05cm"
   header:
-    vertical_space_between_name_and_connections: "0.5cm"
-    vertical_space_between_connections_and_first_section: "0.5cm"
-    horizontal_space_between_connections: "0.3cm"
-    separator_between_connections: ""
-    alignment: center
-  text:
-    # font_family: 'Roboto'
-    font_size: "11pt"
-    leading: "0.6em"
-    alignment: justified
-    date_and_location_column_alignment: right
-  entry_types:
+    space_below_name: "0.5cm"
+    space_below_connections: "0.5cm"
+    connections:
+      phone_number_format: international
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: true
+      separator: '|'
+      space_between_connections: "0.2cm"
+  section_titles:
+    type: with_partial_line
+    line_thickness: "0.5pt"
+    space_above: "0.4cm"
+    space_below: "0.25cm"
+  entries:
+    date_and_location_width: "4.15cm"
+    side_space: "0cm"
+    space_between_columns: "0.1cm"
+    allow_page_break: false
+    short_second_row: false
+    highlights:
+      bullet: ●
+      nested_bullet: ●
+      space_left: "0.05cm"
+      space_above: "0.04cm"
+      space_between_items: "0cm"
+      space_between_bullet_and_text: "0.3em"
+  templates:
+    footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
+    top_note: '*LAST_UPDATED CURRENT_DATE*'
+    single_date: MONTH_ABBREVIATION YEAR
+    date_range: START_DATE – END_DATE
+    time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
     education_entry:
-      main_column_first_row_template: '**INSTITUTION** \nDEGREE AREA -- LOCATION'    
+      main_column: |-
+        **INSTITUTION**, DEGREE
+        AREA -- LOCATION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
   
-locale:
-  phone_number_format: international
-  date_template: MONTH_ABBREVIATION YEAR
 
-rendercv_settings:
+settings:
   render_command: 
-    output_folder_name: 'rendercv-output'
-    pdf_path: './public/Akibur_Rahman_Resume.pdf'
+    pdf_path: '../public/Akibur_Rahman_Resume.pdf'
     dont_generate_markdown: true
+    dont_generate_html: true
     dont_generate_png: true
