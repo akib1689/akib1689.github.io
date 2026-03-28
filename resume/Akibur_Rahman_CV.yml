@@ -11,25 +11,36 @@ cv:
       username: akib1689
   sections:
     research_interests:
-      - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
+      - bullet: '**Operating Systems** (Scheduler design, Memory management, File systems)'
+      - bullet: '**Computer Architecture** (Performance optimization, Energy-efficient computing)'
+      - bullet: '**Systems Research** (Data placement strategies, Storage systems, Distributed systems)'
+      # - bullet: '**ML for Systems / Systems for ML** (optional - keep only if space permits)'
+      # - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
       # - bullet: '**AI driven diagnostics pipeline**, **Disease detection model development** (Medical Imaging; Computer Vision; NLP; Time-Series Analysis on Sensitive Data)'
-      - bullet: '**Scalable AI Systems** and **Deployment Frameworks** (Real-time Inference Pipelines; Privacy-Preserving Machine Learning Deployments)'
+      # - bullet: '**AI for Code** (LLM-based program analysis, code representation learning, automated test generation)'
+      # - bullet: '**Software Mining** (Mining version histories, change impact analysis, bug pattern discovery)'
+      - bullet: '**Scalable AI Systems** and **Deployment Frameworks** (Real-time Inference Pipelines, Privacy-Preserving Machine Learning Deployments)'
       - bullet: '**Observable** and **Auditable ML deployments** (CI-integrated monitoring, explainability, and lightweight symbolic checks)'
     education:
       - institution: Bangladesh University of Engineering & Technology
         area: Computer Science & Engineering
         degree: Bachelor of Science (B.Sc.)
+        location: Dhaka, Bangladesh
         # date: 'GPA: **3.63/4.0**'
         start_date: 2019-04
         end_date: 2024-05
         highlights:
           - 'GPA: **3.63/4.0**'
-          - '**Notable Coursework:** Machine Learning, Bioinformatics, Artificial Intelligence, Software Engineering, Information Systems and Design, Data Structures & Algorithms, Operating Systems'
+          - '**Notable Coursework:** Operating Systems, Information Systems and Design, Data Structures & Algorithms, Computer Architecture, Computer Networks, Machine Learning, Bioinformatics, Artificial Intelligence'
     research_experience:
       - name: 'A Deep Learning approach for predicting Post Traumatic Stress Disorder (PTSD) via Computer Vision & Questionnaire'
         date: 2024-05
         highlights:
           - 'Built an **end-to-end platform** to capture synchronized **video recordings** and **22 question empirical responses**, yielding a synchronized multimodal dataset of **92 participants**'
+          - Designed data pipeline for real-time synchronization of video streams and structured data
+          # - Designed ablation studies to quantify the contribution of visual features to prediction performance
+          - Curated a multimodal dataset (92 participants), enabling reproducible evaluation of PTSD risk prediction models.
+          - Proposed a novel multimodal fusion architecture combining computer vision features with structured questionnaire.
           # - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
           - 'Demonstrated that models trained on combined **facial-expression + questionnaire** inputs outperformed **questionnaire-only** classifiers, validating the added value of **computer-vision** features in PTSD risk prediction'
     publications:
@@ -39,7 +50,7 @@ cv:
           - Akibur Rahman
           - Sadia Sharmin
         date: 2025-11
-        doi: '10.1109/ACOS57278.2024.00009'
+        # doi: '10.1109/ACOS57278.2024.00009'
         journal: 9th International Conference on Algorithms, Computing and Systems
     professional_experience:
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
@@ -49,11 +60,11 @@ cv:
         end_date: present
         # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
         highlights:
-          - Built a **privacy-preserving AI agent** capable of performing financial operations and generating insights **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
-          - 'Launch **BeeBook** platform, onboarding **50** users, achieving **99.9%** uptime and cutting accounting effort by **70%**.'
-          - ' Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs by **25%**.'
           - Maintain a **Kafka cluster** on **Kubernetes**, ensuring a throughput of **1k+** messages per second with **99.9%** uptime.
           - Deploy and maintain **Mattermost** (a secure collaboration platform), for **150+ users** and **25+ teams**.
+          - ' Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs by **25%**.'
+          - Build a **privacy-preserving AI agent** capable of performing financial operations and generating insights **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
+          - 'Launch **BeeBook** platform, onboarding **50** users, achieving **99.9%** uptime and cutting accounting effort by **70%**.'
           - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
           # - 'Build **ETL workflows** to aggregate sales, production and inventory data from PostgreSQL into feature stores for **real-time inference**'
           # - 'Integrate predictive analytics APIs into the backend (Spring Boot microservices), enabling automatic reorder suggestions and dynamic pricing models'
@@ -66,7 +77,7 @@ cv:
         start_date: 2023-11
         end_date: 2024-06
         highlights:
-          - 'Automate deployments with **GitHub Actions** reducing manual errors by **90%** and deployment time by **50%**.'
+          - 'Automated deployments with **GitHub Actions** reducing manual errors by **90%** and deployment time by **50%**.'
           - Integrated **JUnit test suites** with **GitHub Actions CI**, reducing **manual QA effort by 70%**.
           - Contributed to a microservices architecture for **Pridesys ERP**, cutting average feature rollout time by **40%**.
           # - Containerized services with **Docker**, improving developer onboarding time by **50%**.
@@ -100,13 +111,27 @@ cv:
         highlights:
         - Enhanced Helm chart with **nodeSelector**, **tolerations**, **affinity** in all workloads, cutting deployment time by **30%**.
         - '**Tools Used**: Helm, Kubernetes, YAML'
-      - name: '[Wiki.js](https://js.wiki/)'
-        date: '[PR #7766](https://github.com/requarks/wiki/pull/7766)'
-        highlights:
-          - Introduced **GitHub** style **callouts** and **alerts** to enhance content emphasis and user engagement within **Wiki.js** documentation pages.
-          - '**Tools Used**: JavaScript, Vue.js, Markdown, Docker'
+      # - name: '[Wiki.js](https://js.wiki/)'
+      #   date: '[PR #7766](https://github.com/requarks/wiki/pull/7766)'
+      #   highlights:
+      #     - Introduced **GitHub** style **callouts** and **alerts** to enhance content emphasis and user engagement within **Wiki.js** documentation pages.
+      #     - '**Tools Used**: JavaScript, Vue.js, Markdown, Docker'
 
     projects:
+      - name: Custom Operating System
+        date: '[Git Repository](https://github.com/akib1689/CSE_314)'
+        highlights:
+          - Built a **UNIX-style** OS with a **scheduler**, **memory management** and **file system** on top of the **xv6** operating system.
+          - Implemented new process scheduling algorithms and memory management, improving resource utilization by **20%**.
+          - Designed and implemented a hierarchical file system with system calls for file operations.
+          - '**Tools Used**: C++'
+      - name: Home Lab Setup
+        date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
+        highlights:
+          - Orchestrated **15+ self hosted services** using **docker compose** reducing monthly SaaS costs by **$70+**.
+          # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
+          - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**.
+          - '**Tools Used**: Docker, Docker Compose'
       - name: OCR based Document Parser
         date: '[GitHub Organization](https://github.com/CSE-408-B1)'
         highlights:
@@ -118,11 +143,6 @@ cv:
         highlights:
           - Developed a **Transformer based model** to detect anomalies in **ECG signals** using **Tensorflow**, **Skit-learn**.
           - '**Tools Used**: Python, PyTorch, Flask, JavaScript, HTML, CSS'
-      - name: Custom Operating System
-        date: '[Git Repository](https://github.com/akib1689/CSE_314)'
-        highlights:
-          - Built a **UNIX-style** OS with a **scheduler**, **memory management** and **file system** on top of the **xv6** operating system.
-          - '**Tools Used**: C++'
       # - name: Typing tool for Developers
       #   date: '[Git Repository](https://github.com/akib1689/Typing_tool)'
       #   highlights:
@@ -134,97 +154,38 @@ cv:
       #     - Developed a **Turing complete C compiler** that can compile and output **assembly code** for a subset of the C language.
       #     - Implemented **lexical analysis**, **parsing**, and **semantic analysis**.
       #     - '**Tools Used**: C, Lex, Yacc'
-    #   # - name: IMDB Clone for android
-    #   #   date: '[Git Repository](https://github.com/akib1689/TVShows)'
-    #   #   highlights:
-    #   #     - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
-    #   #     - '**Tools Used**: Java, Android, REST API'
-    #   - name: Home Lab Setup
-    #     date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
-    #     highlights:
-    #       - Orchestrated **15+ self hosted services** using **docker compose** reducing monthly SaaS costs by **$70+**. 
-    #       # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
-    #       # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
-    #       - '**Tools Used**: Docker, Docker Compose'
+      # - name: IMDB Clone for android
+      #   date: '[Git Repository](https://github.com/akib1689/TVShows)'
+      #   highlights:
+      #     - Programmed an **android application** following **MVVM architecture** that fetches data from the **TMDB api** and displays it to the user.
+      #     - '**Tools Used**: Java, Android, REST API'
     skills:
       - label: Programming Languages
-        details: Python, Java, C++, JavaScript, Bash, Go
-      - label: Machine Learning & Data Science
-        details: scikit-learn, pandas, NumPy, Matplotlib, OpenCV, TensorFlow, PyTorch
-      - label: Research & Experimentation
-        details: Jupyter, Weights & Biases, MLflow, Git, LaTeX
-      - label: Computer Vision & NLP
-        details: OpenCV, MediaPipe, NLTK, spaCy
+        details: C/C++, Python, Java, Bash, JavaScript, Go
+      # - label: Research & Experimentation
+      - label: Systems Programming
+        details: Process management, memory management, file systems, system calls
+      - label: Operating Systems
+        details: Linux kernel internals, shell scripting, system administration
+      - label: Computer Architecture
+        details: x86/x64 architecture, caching, virtual memory, pipeline optimization, assembly language
+      # - label: Research & Experimentation
+      #   details: Jupyter, Weights & Biases, MLflow, Git, LaTeX
+      # - label: Computer Vision & NLP
+      #   details: OpenCV, MediaPipe, NLTK, spaCy
       - label: Data Engineering & Pipelines
         details: SQL, PostgreSQL, MongoDB, Kafka, Apache Airflow
       - label: Software Engineering & DevOps
         details: Docker, GitHub Actions, Jenkins, Kubernetes, Terraform
+      - label: Machine Learning & Data Science
+        details: scikit-learn, pandas, NumPy, Matplotlib, OpenCV, TensorFlow, PyTorch
       # - label: Web & Interface Development
       #   details: React, Next.js, HTML, CSS, Tailwind CSS
-
-      
-design:
-  theme: engineeringresumes
-  links:
-    underline: true
-    show_external_link_icon: false
-  page:
-    size: a4
-    top_margin: "1cm"
-    bottom_margin: "1cm"
-    left_margin: "1cm"
-    right_margin: "1cm"
-    show_footer: false
-    show_top_note: true
-  sections:
-    allow_page_break: true
-    space_between_regular_entries: "0.1cm"
-    space_between_text_based_entries: "0.05cm"
-  header:
-    space_below_name: "0.5cm"
-    space_below_connections: "0.5cm"
-    connections:
-      phone_number_format: international
-      hyperlink: true
-      show_icons: true
-      display_urls_instead_of_usernames: true
-      separator: '|'
-      space_between_connections: "0.2cm"
-  section_titles:
-    type: with_partial_line
-    line_thickness: "0.5pt"
-    space_above: "0.4cm"
-    space_below: "0.25cm"
-  entries:
-    date_and_location_width: "4.15cm"
-    side_space: "0cm"
-    space_between_columns: "0.1cm"
-    allow_page_break: false
-    short_second_row: false
-    highlights:
-      bullet: ●
-      nested_bullet: ●
-      space_left: "0.05cm"
-      space_above: "0.04cm"
-      space_between_items: "0cm"
-      space_between_bullet_and_text: "0.3em"
-  templates:
-    footer: '*NAME -- PAGE_NUMBER/TOTAL_PAGES*'
-    top_note: '*LAST_UPDATED CURRENT_DATE*'
-    single_date: MONTH_ABBREVIATION YEAR
-    date_range: START_DATE – END_DATE
-    time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
-    education_entry:
-      main_column: |-
-        **INSTITUTION**, DEGREE
-        AREA -- LOCATION
-        SUMMARY
-        HIGHLIGHTS
-      date_and_location_column: DATE
   
 
 settings:
-  render_command: 
+  render_command:
+    design: 'design.yml'
     pdf_path: '../public/Akibur_Rahman_Resume.pdf'
     dont_generate_markdown: true
     dont_generate_html: true
