@@ -11,13 +11,13 @@ cv:
       username: akib1689
   sections:
     research_interests:
-      - bullet: '**Operating Systems** (Scheduler design, Memory management, File systems)'
-      - bullet: '**Computer Architecture** (Performance optimization, Energy-efficient computing)'
-      - bullet: '**Systems Research** (Data placement strategies, Storage systems, Distributed systems)'
+      - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
+      # - bullet: '**Operating Systems** (Scheduler design, Memory management, File systems)'
+      # - bullet: '**Computer Architecture** (Performance optimization, Energy-efficient computing)'
+      # - bullet: '**Systems Research** (Data placement strategies, Storage systems, Distributed systems)'
       # - bullet: '**ML for Systems / Systems for ML** (optional - keep only if space permits)'
-      # - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
       # - bullet: '**AI driven diagnostics pipeline**, **Disease detection model development** (Medical Imaging; Computer Vision; NLP; Time-Series Analysis on Sensitive Data)'
-      # - bullet: '**AI for Code** (LLM-based program analysis, code representation learning, automated test generation)'
+      - bullet: '**AI for Code** (LLM-based program analysis, code representation learning, automated test generation)'
       # - bullet: '**Software Mining** (Mining version histories, change impact analysis, bug pattern discovery)'
       - bullet: '**Scalable AI Systems** and **Deployment Frameworks** (Real-time Inference Pipelines, Privacy-Preserving Machine Learning Deployments)'
       - bullet: '**Observable** and **Auditable ML deployments** (CI-integrated monitoring, explainability, and lightweight symbolic checks)'
@@ -31,16 +31,16 @@ cv:
         end_date: 2024-05
         highlights:
           - 'GPA: **3.63/4.0**'
-          - '**Notable Coursework:** Operating Systems, Information Systems and Design, Data Structures & Algorithms, Computer Architecture, Computer Networks, Machine Learning, Bioinformatics, Artificial Intelligence'
+          - '**Notable Coursework:** Machine Learning, Bioinformatics, Artificial Intelligence, Operating Systems, Information Systems and Design, Data Structures & Algorithms, Computer Architecture, Computer Networks'
     research_experience:
       - name: 'A Deep Learning approach for predicting Post Traumatic Stress Disorder (PTSD) via Computer Vision & Questionnaire'
         date: 2024-05
         highlights:
           - 'Built an **end-to-end platform** to capture synchronized **video recordings** and **22 question empirical responses**, yielding a synchronized multimodal dataset of **92 participants**'
-          - Designed data pipeline for real-time synchronization of video streams and structured data
+          - Designed **data pipeline** for **real-time synchronization** of **video streams** and structured data
           # - Designed ablation studies to quantify the contribution of visual features to prediction performance
-          - Curated a multimodal dataset (92 participants), enabling reproducible evaluation of PTSD risk prediction models.
-          - Proposed a novel multimodal fusion architecture combining computer vision features with structured questionnaire.
+          - Curated a **multimodal dataset (92 participants)**, enabling **reproducible evaluation** of PTSD risk prediction models.
+          - Proposed a novel **multimodal fusion architecture** combining computer vision features with structured questionnaire.
           # - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
           - 'Demonstrated that models trained on combined **facial-expression + questionnaire** inputs outperformed **questionnaire-only** classifiers, validating the added value of **computer-vision** features in PTSD risk prediction'
     publications:
@@ -60,11 +60,11 @@ cv:
         end_date: present
         # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
         highlights:
+          - Build a **privacy-preserving AI agent** capable of performing financial operations and generating insights **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
+          - 'Launch **BeeBook** platform, onboarding **50** users, achieving **99.9%** uptime and cutting accounting effort by **70%**.'
           - Maintain a **Kafka cluster** on **Kubernetes**, ensuring a throughput of **1k+** messages per second with **99.9%** uptime.
           - Deploy and maintain **Mattermost** (a secure collaboration platform), for **150+ users** and **25+ teams**.
           - ' Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs by **25%**.'
-          - Build a **privacy-preserving AI agent** capable of performing financial operations and generating insights **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
-          - 'Launch **BeeBook** platform, onboarding **50** users, achieving **99.9%** uptime and cutting accounting effort by **70%**.'
           - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
           # - 'Build **ETL workflows** to aggregate sales, production and inventory data from PostgreSQL into feature stores for **real-time inference**'
           # - 'Integrate predictive analytics APIs into the backend (Spring Boot microservices), enabling automatic reorder suggestions and dynamic pricing models'
@@ -118,12 +118,23 @@ cv:
       #     - '**Tools Used**: JavaScript, Vue.js, Markdown, Docker'
 
     projects:
+      - name: OCR based Document Parser
+        date: '[GitHub Organization](https://github.com/CSE-408-B1)'
+        highlights:
+          - Developed a **microservices** based **web application** using **Tesseract**. Achieved a sustained processing of **150 documents/hour**.
+          - Cut down the data entry time for **primary school students' submissions** from **1 day** to **3 minutes**.
+          - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
+      - name: Transformer based anomaly detection in ECG signals
+        date: '[Git Repository](https://github.com/akib1689/CSE-472/tree/main/Project)'
+        highlights:
+          - Developed a **Transformer based model** to detect anomalies in **ECG signals** using **Tensorflow**, **Skit-learn**.
+          - '**Tools Used**: Python, PyTorch, Flask, JavaScript, HTML, CSS'
       - name: Custom Operating System
         date: '[Git Repository](https://github.com/akib1689/CSE_314)'
         highlights:
           - Built a **UNIX-style** OS with a **scheduler**, **memory management** and **file system** on top of the **xv6** operating system.
-          - Implemented new process scheduling algorithms and memory management, improving resource utilization by **20%**.
-          - Designed and implemented a hierarchical file system with system calls for file operations.
+          - Implemented new **process scheduling algorithms** and **memory management** techniques, improving resource utilization by **20%**.
+          - Designed and implemented a **hierarchical file system** with system calls for file operations.
           - '**Tools Used**: C++'
       - name: Home Lab Setup
         date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
@@ -132,17 +143,6 @@ cv:
           # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
           - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**.
           - '**Tools Used**: Docker, Docker Compose'
-      - name: OCR based Document Parser
-        date: '[GitHub Organization](https://github.com/CSE-408-B1)'
-        highlights:
-          - Developed a **microservices** based **web application** using **Tesseract**. Achieved a sustained processing of **150 documents/hour**.
-          - Cut down the data entry time for **primary school students' submissions** from **3 days** to **30 minutes**.
-          - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
-      - name: Transformer based anomaly detection in ECG signals
-        date: '[Git Repository](https://github.com/akib1689/CSE-472/tree/main/Project)'
-        highlights:
-          - Developed a **Transformer based model** to detect anomalies in **ECG signals** using **Tensorflow**, **Skit-learn**.
-          - '**Tools Used**: Python, PyTorch, Flask, JavaScript, HTML, CSS'
       # - name: Typing tool for Developers
       #   date: '[Git Repository](https://github.com/akib1689/Typing_tool)'
       #   highlights:
@@ -162,17 +162,16 @@ cv:
     skills:
       - label: Programming Languages
         details: C/C++, Python, Java, Bash, JavaScript, Go
-      # - label: Research & Experimentation
-      - label: Systems Programming
-        details: Process management, memory management, file systems, system calls
-      - label: Operating Systems
-        details: Linux kernel internals, shell scripting, system administration
-      - label: Computer Architecture
-        details: x86/x64 architecture, caching, virtual memory, pipeline optimization, assembly language
-      # - label: Research & Experimentation
-      #   details: Jupyter, Weights & Biases, MLflow, Git, LaTeX
-      # - label: Computer Vision & NLP
-      #   details: OpenCV, MediaPipe, NLTK, spaCy
+      # - label: Systems Programming
+      #   details: Process management, memory management, file systems, system calls
+      # - label: Operating Systems
+      #   details: Linux kernel internals, shell scripting, system administration
+      # - label: Computer Architecture
+      #   details: x86/x64 architecture, caching, virtual memory, pipeline optimization, assembly language
+      - label: Research & Experimentation
+        details: Jupyter, Weights & Biases, MLflow, Git, LaTeX
+      - label: Computer Vision & NLP
+        details: OpenCV, MediaPipe, NLTK, spaCy
       - label: Data Engineering & Pipelines
         details: SQL, PostgreSQL, MongoDB, Kafka, Apache Airflow
       - label: Software Engineering & DevOps
