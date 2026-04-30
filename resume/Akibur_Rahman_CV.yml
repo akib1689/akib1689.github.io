@@ -168,8 +168,8 @@ cv:
       #   details: Linux kernel internals, shell scripting, system administration
       # - label: Computer Architecture
       #   details: x86/x64 architecture, caching, virtual memory, pipeline optimization, assembly language
-      - label: Research & Experimentation
-        details: Jupyter, Weights & Biases, MLflow, Git, LaTeX
+      # - label: Research & Experimentation
+      #   details: Jupyter, Weights & Biases, MLflow, Git, LaTeX
       - label: Computer Vision & NLP
         details: OpenCV, MediaPipe, NLTK, spaCy
       - label: Data Engineering & Pipelines
