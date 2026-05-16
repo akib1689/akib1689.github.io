@@ -33,6 +33,14 @@ cv:
           - 'GPA: **3.63/4.0**'
           - '**Notable Coursework:** Machine Learning, Bioinformatics, Artificial Intelligence, Operating Systems, Information Systems and Design, Data Structures & Algorithms, Computer Architecture, Computer Networks'
     research_experience:
+      - name: 'Execution-Augmented Generation (EAG): Zero-Data Agent Architecture for Privacy-Preserving LLM Inference'
+        start_date: 2026-03
+        end_date: present
+        highlights:
+          - 'Proposed **EAG**, a novel agent paradigm where LLMs emit **schema-guided execution plans**; a local, read-only parser computes results **without exposing raw user data** to the model.'
+          - 'Designed the **Intent → Plan → Local Execution → Synthesis** pipeline with strict **zero raw-data egress** guarantees, targeting auditable deployments in sensitive domains (e.g., financial logs, health records).'
+          - 'Aligning with **AIOps** and **secure log analytics**; preparing technical report for submission to **NeurIPS D&B**, **MLSys**, or **USENIX ATC**.'
+          # - '**Tools/Concepts**: LLM prompting strategies, schema validation, static analysis, privacy-preserving architecture, Python, TypeScript'
       - name: 'A Deep Learning approach for predicting Post Traumatic Stress Disorder (PTSD) via Computer Vision & Questionnaire'
         date: 2024-05
         highlights:
@@ -44,14 +52,31 @@ cv:
           # - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
           - 'Demonstrated that models trained on combined **facial-expression + questionnaire** inputs outperformed **questionnaire-only** classifiers, validating the added value of **computer-vision** features in PTSD risk prediction'
     publications:
-      - title: 'A Multimodal Approach: Enhancing PTSD Diagnosis with AI-Powered Behavioral Analysis [*Accepted*]'
+      - title: 'A Multimodal Approach: Enhancing PTSD Diagnosis with AI-Powered Behavioral Analysis'
         authors:
           - Anika Monir
-          - Akibur Rahman
+          - '*Akibur Rahman*'
           - Sadia Sharmin
-        date: 2025-11
+        date: 2026-04
         doi: '10.1145/3789418.3789451'
         journal: 9th International Conference on Algorithms, Computing and Systems
+    open_source_contributions:
+      - name: '[Render CV](https://rendercv.com/)'
+        date: '[PR #166](https://github.com/rendercv/rendercv/pull/166)'
+        highlights:
+        # - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
+        - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, used by **1k+** users.
+        - '**Tools Used**: Python, YAML, Jinja2'
+      - name: '[Plane Helm Chart](https://plane.so/)'
+        date: '[PR #121](https://github.com/makeplane/helm-charts/pull/121)'
+        highlights:
+        - Enhanced Helm chart with **nodeSelector**, **tolerations**, **affinity** in all workloads, cutting deployment time by **30%**.
+        - '**Tools Used**: Helm, Kubernetes, YAML'
+      # - name: '[Wiki.js](https://js.wiki/)'
+      #   date: '[PR #7766](https://github.com/requarks/wiki/pull/7766)'
+      #   highlights:
+      #     - Introduced **GitHub** style **callouts** and **alerts** to enhance content emphasis and user engagement within **Wiki.js** documentation pages.
+      #     - '**Tools Used**: JavaScript, Vue.js, Markdown, Docker'
     professional_experience:
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
         position: Software Engineer II
@@ -98,24 +123,6 @@ cv:
           # - Redesined a user friendly **UI** that increased the user engagement.
           - Published **2 applications** on the **Google Play Store** with **500 downloads**.
           - '**Tools Used**: Java, Android, Android Studio, Room Database, REST API.'
-    
-    open_source_contributions:
-      - name: '[Render CV](https://rendercv.com/)'
-        date: '[PR #166](https://github.com/rendercv/rendercv/pull/166)'
-        highlights:
-        # - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
-        - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, used by **1k+** users.
-        - '**Tools Used**: Python, YAML, Jinja2'
-      - name: '[Plane Helm Chart](https://plane.so/)'
-        date: '[PR #121](https://github.com/makeplane/helm-charts/pull/121)'
-        highlights:
-        - Enhanced Helm chart with **nodeSelector**, **tolerations**, **affinity** in all workloads, cutting deployment time by **30%**.
-        - '**Tools Used**: Helm, Kubernetes, YAML'
-      # - name: '[Wiki.js](https://js.wiki/)'
-      #   date: '[PR #7766](https://github.com/requarks/wiki/pull/7766)'
-      #   highlights:
-      #     - Introduced **GitHub** style **callouts** and **alerts** to enhance content emphasis and user engagement within **Wiki.js** documentation pages.
-      #     - '**Tools Used**: JavaScript, Vue.js, Markdown, Docker'
 
     projects:
       - name: OCR based Document Parser
@@ -184,7 +191,7 @@ cv:
 
 settings:
   render_command:
-    design: 'design.yml'
+    design: './design.yml'
     pdf_path: '../public/Akibur_Rahman_Resume.pdf'
     dont_generate_markdown: true
     dont_generate_html: true
