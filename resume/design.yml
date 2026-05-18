@@ -1,0 +1,57 @@
+design:
+  theme: engineeringresumes
+  links:
+    underline: true
+    show_external_link_icon: false
+  page:
+    top_margin: 1cm
+    bottom_margin: 1cm
+    left_margin: 1cm
+    right_margin: 1cm
+    show_footer: false
+    show_top_note: true
+  sections:
+    allow_page_break: true
+    space_between_regular_entries: 0.1cm
+    space_between_text_based_entries: 0.05cm
+  header:
+    space_below_name: 0.5cm
+    space_below_connections: 0.5cm
+    connections:
+      phone_number_format: international
+      hyperlink: true
+      show_icons: true
+      display_urls_instead_of_usernames: true
+      separator: '|'
+      space_between_connections: "0.2cm"
+  section_titles:
+    type: with_partial_line
+    line_thickness: "0.5pt"
+    space_above: "0.3cm"
+    space_below: "0.2cm"
+  # entries:
+  #   date_and_location_width: "4.15cm"
+  #   side_space: "0cm"
+  #   space_between_columns: "0.1cm"
+  #   allow_page_break: false
+  #   short_second_row: false
+  #   highlights:
+  #     bullet: ●
+  #     nested_bullet: ●
+  #     space_left: "0.05cm"
+  #     space_above: "0.04cm"
+  #     space_between_items: "0cm"
+  #     space_between_bullet_and_text: "0.3em"
+  templates:
+    footer: '*NAME  -- Page PAGE_NUMBER of TOTAL_PAGES*'
+    top_note: '*LAST_UPDATED CURRENT_DATE*'
+    single_date: MONTH_ABBREVIATION YEAR
+    date_range: START_DATE - END_DATE
+    time_span: HOW_MANY_YEARS YEARS HOW_MANY_MONTHS MONTHS
+    education_entry:
+      main_column: |-
+        **INSTITUTION**, DEGREE
+        AREA -- LOCATION
+        SUMMARY
+        HIGHLIGHTS
+      date_and_location_column: DATE
