@@ -2,7 +2,7 @@ cv:
   name: Akibur Rahman
   location: Dhaka, Bangladesh
   email: ak.akibur.rahman@gmail.com
-  phone: tel:+880-1521-70-52-98
+  phone: tel:+880-1715-087-184
   website: https://akibur-rahman.com/
   social_networks:
     - network: LinkedIn
@@ -39,10 +39,11 @@ cv:
         start_date: 2023-11
         end_date: 2024-06
         highlights:
-          - Maintained **Mattermost**, consolidating **100+ WhatsApp groups** into **single platform** reducing **reply time** by **half**.
-          - Integrated **JUnit test suites** with **GitHub Actions**, reducing **manual QA effort by 70%**.
-          - Contributed to a microservices architecture for **Pridesys ERP**, cutting average feature rollout time by **40%**.
-          - Containerized services with **Docker**, improving developer onboarding time by **50%**.
+          - Consolidated **100+** fragmented **WhatsApp groups** into **single Mattermost** reducing **average response time** by **50%**.
+          - Integrated **JUnit test suites** into **GitHub Actions** pipelines across **10+ ERP microservices** reducing manual QA effort by **70%**.
+          # - Contributed to a microservices architecture for **Pridesys ERP**, cutting average feature rollout time by **40%**.
+          # - Containerized services with **Docker**, improving developer onboarding time by **50%**.
+          - Containerized legacy **Spring Boot** services with **Docker**, standardizing environments and accelerating onboarding by **40%**.
           - '**Tools Used**: Spring Boot, Docker, GitHub Actions, JUnit'
 
       - company: '[Durjoy DSS](https://www.linkedin.com/company/durjoy/)'
@@ -74,7 +75,7 @@ cv:
         area: Computer Science & Engineering
         degree: Bachelor of Science (B.Sc.)
         # date: 'GPA: **3.63/4.0**'
-        location: Dhaka, Bangladesh
+        location: 'Dhaka, Bangladesh, **GPA: 3.63/4.0**'
         start_date: 2019-04
         end_date: 2024-06
         highlights:
