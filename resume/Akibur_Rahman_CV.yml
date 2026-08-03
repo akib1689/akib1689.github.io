@@ -23,7 +23,7 @@ cv:
         end_date: present
         # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
         highlights:
-          - Architect **Farmer Card** platform, achieving **22k+** **registrations** in first phase. On track to **100k+** registrations before July.
+          - Architect **Farmer Card** platform, with **22k+** **registrations** in first phase. **1M** **registrations** in **2nd phase** with **99.99%** uptime and **<1%** error rate.
           - Lead the development of **BeeBook** platform, onboard **50 users**, achieving **99.9%** uptime and cutting accounting effort by **70%**.
           - Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs by **40%**.
           # - Migrated **on-premises services** to **cloud infrastructure** using **Azure** resulting in a streamlined infrastructure that improved the system uptime and reduced maintenance needs.
