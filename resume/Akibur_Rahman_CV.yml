@@ -72,6 +72,12 @@ cv:
         doi: '10.1145/3789418.3789451'
         journal: 9th International Conference on Algorithms, Computing and Systems
     open_source_contributions:
+      - name: '[Asyar](https://asyar.org)'
+        date: '[PR #755](https://github.com/Xoshbin/asyar/pull/755)'
+        highlights:
+        - 'Fixed a triaged bug dumping **raw bytes** into file previews by adding **magic-byte sniffing** in **Rust**, eliminating corruption for **all binary formats** (PDF, DOCX, XLSX) with **zero new dependencies**.'
+        - 'Unified the **OS-driven preview/open chain** across **10 files**, fixing silent **open-in-default-app** failures; validated with **35+ automated tests** passing.'
+        - '**Tools Used**: Rust, Tauri 2, objc2, Svelte 5, TypeScript'
       - name: '[Render CV](https://rendercv.com/)'
         date: '[PR #166](https://github.com/rendercv/rendercv/pull/166)'
         highlights:
@@ -152,9 +158,9 @@ cv:
       - name: Home Lab Setup
         date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
         highlights:
-          - Orchestrated **15+ self hosted services** using **docker compose** reducing monthly SaaS costs by **$70+**.
+          - Orchestrated **15+ services** (**PfSense**, **Immich**, **NextCloud**) using **docker compose** reducing monthly SaaS costs by **$70+**.
           # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
-          - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**.
+          # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**.
           - '**Tools Used**: Docker, Docker Compose'
       # - name: Typing tool for Developers
       #   date: '[Git Repository](https://github.com/akib1689/Typing_tool)'
@@ -165,7 +171,7 @@ cv:
         date: '[Git Repository]()'
         highlights:
           - Developed a **Turing complete C compiler** that can compile and output **assembly code** for a subset of the C language.
-          - Implemented **lexical analysis**, **parsing**, and **semantic analysis**.
+          # - Implemented **lexical analysisß**, **parsing**, and **semantic analysis**.
           - '**Tools Used**: C, Lex, Yacc'
       # - name: IMDB Clone for android
       #   date: '[Git Repository](https://github.com/akib1689/TVShows)'
@@ -174,7 +180,7 @@ cv:
       #     - '**Tools Used**: Java, Android, REST API'
     skills:
       - label: Programming Languages
-        details: C/C++, Python, Java, Bash, JavaScript, Go
+        details: C/C++, Python, Java, Bash, JavaScript, Go, Rust, SQL, HTML/CSS
       # - label: Systems Programming
       #   details: Process management, memory management, file systems, system calls
       # - label: Operating Systems
