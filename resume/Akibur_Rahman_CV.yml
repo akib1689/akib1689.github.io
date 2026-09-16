@@ -11,16 +11,23 @@ cv:
       username: akib1689
   sections:
     research_interests:
-      - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
-      # - bullet: '**Operating Systems** (Scheduler design, Memory management, File systems)'
-      # - bullet: '**Computer Architecture** (Performance optimization, Energy-efficient computing)'
-      # - bullet: '**Systems Research** (Data placement strategies, Storage systems, Distributed systems)'
-      # - bullet: '**ML for Systems / Systems for ML** (optional - keep only if space permits)'
-      # - bullet: '**AI driven diagnostics pipeline**, **Disease detection model development** (Medical Imaging; Computer Vision; NLP; Time-Series Analysis on Sensitive Data)'
+      - bullet: '**LLM Agent Security** (Execution isolation, privacy-preserving inference, zero-data-exposure architectures)'
       - bullet: '**AI for Code** (LLM-based program analysis, code representation learning, automated test generation)'
-      # - bullet: '**Software Mining** (Mining version histories, change impact analysis, bug pattern discovery)'
       - bullet: '**Scalable AI Systems** and **Deployment Frameworks** (Real-time Inference Pipelines, Privacy-Preserving Machine Learning Deployments)'
       - bullet: '**Observable** and **Auditable ML deployments** (CI-integrated monitoring, explainability, and lightweight symbolic checks)'
+      - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
+
+    # research_interests:
+    #   - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
+    #   # - bullet: '**Operating Systems** (Scheduler design, Memory management, File systems)'
+    #   # - bullet: '**Computer Architecture** (Performance optimization, Energy-efficient computing)'
+    #   # - bullet: '**Systems Research** (Data placement strategies, Storage systems, Distributed systems)'
+    #   # - bullet: '**ML for Systems / Systems for ML** (optional - keep only if space permits)'
+    #   # - bullet: '**AI driven diagnostics pipeline**, **Disease detection model development** (Medical Imaging; Computer Vision; NLP; Time-Series Analysis on Sensitive Data)'
+    #   - bullet: '**AI for Code** (LLM-based program analysis, code representation learning, automated test generation)'
+    #   # - bullet: '**Software Mining** (Mining version histories, change impact analysis, bug pattern discovery)'
+    #   - bullet: '**Scalable AI Systems** and **Deployment Frameworks** (Real-time Inference Pipelines, Privacy-Preserving Machine Learning Deployments)'
+    #   - bullet: '**Observable** and **Auditable ML deployments** (CI-integrated monitoring, explainability, and lightweight symbolic checks)'
     education:
       - institution: Bangladesh University of Engineering & Technology
         area: Computer Science & Engineering
@@ -32,15 +39,19 @@ cv:
         highlights:
           - 'GPA: **3.63/4.0**'
           - '**Notable Coursework:** Machine Learning, Bioinformatics, Artificial Intelligence, Operating Systems, Information Systems and Design, Data Structures & Algorithms, Computer Architecture, Computer Networks'
+
     research_experience:
-      - name: 'Execution-Augmented Generation (EAG): Zero-Data Agent Architecture for Privacy-Preserving LLM Inference'
+      - name: 'Execution-Augmented Generation (EAG): Decoupled Reasoning and Data Access for Privacy-Preserving LLM Agents'
         start_date: 2026-03
         end_date: present
         highlights:
-          - 'Proposed **EAG**, a novel agent paradigm where LLMs emit **schema-guided execution plans**; a local, read-only parser computes results **without exposing raw user data** to the model.'
-          - 'Designed the **Intent → Plan → Local Execution → Synthesis** pipeline with strict **zero raw-data egress** guarantees, targeting auditable deployments in sensitive domains (e.g., financial logs, health records).'
-          - 'Aligning with **AIOps** and **secure log analytics**; preparing technical report for submission to **NeurIPS D&B**, **MLSys**, or **USENIX ATC**.'
-          # - '**Tools/Concepts**: LLM prompting strategies, schema validation, static analysis, privacy-preserving architecture, Python, TypeScript'
+          - 'Identified that existing agent architectures expose raw data to the LLM, creating an unnecessary attack surface, asked whether agents can reason effectively over schema-only metadata.'
+          - 'Designed and implemented EAG, a planner executor architecture where the LLM generates execution plans over schema metadata and a local executor runs them against real data with zero data token leakage.'
+          - 'Schema only reasoning matches or exceeds the accuracy of data-exposed agents across **two SQL benchmarks** and **one REST API domain benchmark**, with up to **21%** fewer tokens, while zero raw data tokens enter the model context.'
+          - 'Preparing manuscript for publication with Prof. Md. Tariqul Islam Pavel at **UMBC**.'
+
+
+
       - name: 'A Deep Learning approach for predicting Post Traumatic Stress Disorder (PTSD) via Computer Vision & Questionnaire'
         date: 2024-05
         highlights:
@@ -55,16 +66,21 @@ cv:
       - title: 'A Multimodal Approach: Enhancing PTSD Diagnosis with AI-Powered Behavioral Analysis'
         authors:
           - Anika Monir
-          - '*Akibur Rahman*'
+          - '**Akibur Rahman**'
           - Sadia Sharmin
         date: 2026-04
         doi: '10.1145/3789418.3789451'
         journal: 9th International Conference on Algorithms, Computing and Systems
     open_source_contributions:
+      - name: '[Asyar](https://asyar.org)'
+        date: '[PR #755](https://github.com/Xoshbin/asyar/pull/755)'
+        highlights:
+        - 'Fixed a triaged bug dumping **raw bytes** into file previews by adding **magic-byte sniffing** in **Rust**, eliminating corruption for **all binary formats** (PDF, DOCX, XLSX) with **zero new dependencies**.'
+        - 'Unified the **OS-driven preview/open chain** across **10 files**, fixing silent **open-in-default-app** failures; validated with **35+ automated tests** passing.'
+        - '**Tools Used**: Rust, Tauri 2, objc2, Svelte 5, TypeScript'
       - name: '[Render CV](https://rendercv.com/)'
         date: '[PR #166](https://github.com/rendercv/rendercv/pull/166)'
         highlights:
-        # - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, allowing users to define **cli** options directly within the configuration, simplyfying the resume generation process.
         - Enhanced the **rendercv** tool by integrating **rendercv settings** into the **YAML** file, used by **1k+** users.
         - '**Tools Used**: Python, YAML, Jinja2'
       - name: '[Plane Helm Chart](https://plane.so/)'
@@ -83,18 +99,13 @@ cv:
         location: Dhaka, Bangladesh
         start_date: 2024-06
         end_date: present
-        # summary: 'Pridesys IT is a leading software company in Bangladesh that provides ERP solutions to businesses.'
         highlights:
           - Build a **privacy-preserving AI agent** capable of performing financial operations and generating insights **without accessing sensitive data**, introducing a novel **zero-data AI interaction model**.
-          - 'Launch **BeeBook** platform, onboarding **50** users, achieving **99.9%** uptime and cutting accounting effort by **70%**.'
+          # - 'Launch **BeeBook** platform, onboarding **50** users, achieving **99.9%** uptime and cutting accounting effort by **70%**.'
           - Maintain a **Kafka cluster** on **Kubernetes**, ensuring a throughput of **1k+** messages per second with **99.9%** uptime.
           - Deploy and maintain **Mattermost** (a secure collaboration platform), for **150+ users** and **25+ teams**.
           - ' Migrate **on-premises services** to **cloud infrastructure**, cutting downtime by **30%** and maintenance costs by **25%**.'
           - '**Tools Used**: Azure, Kubernetes, Docker, Helm, GitHub Actions, Kafka, OpenTofu, Mockito, JaCoCo, Spring Boot'
-          # - 'Build **ETL workflows** to aggregate sales, production and inventory data from PostgreSQL into feature stores for **real-time inference**'
-          # - 'Integrate predictive analytics APIs into the backend (Spring Boot microservices), enabling automatic reorder suggestions and dynamic pricing models'
-          # - 'Containerize **ML components** with **Docker and Kubernetes**, reducing deployment time by **40%** and ensuring high availability in production'
-          # - 'Collaborate with **product** and **quality assurance** teams to benchmark model performance and enforce **data-quality checks** across the pipeline'
 
       - company: '[Pridesys IT](https://www.linkedin.com/company/pridesys-it-ltd)'
         position: Junior Software Engineer
@@ -124,10 +135,11 @@ cv:
           - Published **2 applications** on the **Google Play Store** with **500 downloads**.
           - '**Tools Used**: Java, Android, Android Studio, Room Database, REST API.'
 
-    projects:
+    notable_projects:
       - name: OCR based Document Parser
         date: '[GitHub Organization](https://github.com/CSE-408-B1)'
         highlights:
+          # - 'Supervised by **Md. Toufikuzzaman** (Lecturer, Dept. of CSE, BUET; currently Ph.D. student, Penn State University).'
           - Developed a **microservices** based **web application** using **Tesseract**. Achieved a sustained processing of **150 documents/hour**.
           - Cut down the data entry time for **primary school students' submissions** from **1 day** to **3 minutes**.
           - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
@@ -136,31 +148,31 @@ cv:
         highlights:
           - Developed a **Transformer based model** to detect anomalies in **ECG signals** using **Tensorflow**, **Skit-learn**.
           - '**Tools Used**: Python, PyTorch, Flask, JavaScript, HTML, CSS'
-      - name: Custom Operating System
-        date: '[Git Repository](https://github.com/akib1689/CSE_314)'
-        highlights:
-          - Built a **UNIX-style** OS with a **scheduler**, **memory management** and **file system** on top of the **xv6** operating system.
-          - Implemented new **process scheduling algorithms** and **memory management** techniques, improving resource utilization by **20%**.
-          - Designed and implemented a **hierarchical file system** with system calls for file operations.
-          - '**Tools Used**: C++'
+      # - name: Custom Operating System
+      #   date: '[Git Repository](https://github.com/akib1689/CSE_314)'
+      #   highlights:
+      #     - Built a **UNIX-style** OS with a **scheduler**, **memory management** and **file system** on top of the **xv6** operating system.
+      #     - Implemented new **process scheduling algorithms** and **memory management** techniques, improving resource utilization by **20%**.
+      #     - Designed and implemented a **hierarchical file system** with system calls for file operations.
+      #     - '**Tools Used**: C++'
       - name: Home Lab Setup
         date: '[Git Repository](https://github.com/akib-89/Home-lab-Configuration)'
         highlights:
-          - Orchestrated **15+ self hosted services** using **docker compose** reducing monthly SaaS costs by **$70+**.
+          - Orchestrated **15+ services** (**PfSense**, **Immich**, **NextCloud**) using **docker compose** reducing monthly SaaS costs by **$70+**.
           # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
-          - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**.
+          # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**.
           - '**Tools Used**: Docker, Docker Compose'
       # - name: Typing tool for Developers
       #   date: '[Git Repository](https://github.com/akib1689/Typing_tool)'
       #   highlights:
       #     - Developed **typing tool** for the developers that searches for the random code snippets from the GitHub to improve their typing speed and accuracy.
       #     - '**Tools Used**: JavaScript, Node.js'
-      # - name: C Compiler
-      #   date: '[Git Repository]()'
-      #   highlights:
-      #     - Developed a **Turing complete C compiler** that can compile and output **assembly code** for a subset of the C language.
-      #     - Implemented **lexical analysis**, **parsing**, and **semantic analysis**.
-      #     - '**Tools Used**: C, Lex, Yacc'
+      - name: C Compiler
+        date: '[Git Repository]()'
+        highlights:
+          - Developed a **Turing complete C compiler** that can compile and output **assembly code** for a subset of the C language.
+          # - Implemented **lexical analysisß**, **parsing**, and **semantic analysis**.
+          - '**Tools Used**: C, Lex, Yacc'
       # - name: IMDB Clone for android
       #   date: '[Git Repository](https://github.com/akib1689/TVShows)'
       #   highlights:
@@ -168,7 +180,7 @@ cv:
       #     - '**Tools Used**: Java, Android, REST API'
     skills:
       - label: Programming Languages
-        details: C/C++, Python, Java, Bash, JavaScript, Go
+        details: C/C++, Python, Java, Bash, JavaScript, Go, Rust, SQL, HTML/CSS
       # - label: Systems Programming
       #   details: Process management, memory management, file systems, system calls
       # - label: Operating Systems

@@ -4,9 +4,9 @@ design:
     underline: true
     show_external_link_icon: false
   page:
-    top_margin: 1.2cm
+    top_margin: 1cm
     bottom_margin: 1cm
-    left_margin: 1.2cm
+    left_margin: 1cm
     right_margin: 1cm
     show_footer: false
     show_top_note: true
