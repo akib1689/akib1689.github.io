@@ -13,9 +13,9 @@ cv:
     research_interests:
       - bullet: '**LLM Agent Security** (Execution isolation, privacy-preserving inference, zero-data-exposure architectures)'
       - bullet: '**AI for Code** (LLM-based program analysis, code representation learning, automated test generation)'
-      - bullet: '**Scalable AI Systems** and **Deployment Frameworks** (Real-time Inference Pipelines, Privacy-Preserving Machine Learning Deployments)'
+      - bullet: '**Scalable AI Systems** and **Deployment Frameworks** (Real time Inference Pipelines, Privacy Preserving ML Deployments)'
       - bullet: '**Observable** and **Auditable ML deployments** (CI-integrated monitoring, explainability, and lightweight symbolic checks)'
-      - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
+      - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Experiment Tracking; Model Monitoring & Management)'
 
     # research_interests:
     #   - bullet: '**Software Engineering** for **Machine Learning Systems** (MLOps; Data Versioning; Experiment Tracking; Model Monitoring & Management)'
