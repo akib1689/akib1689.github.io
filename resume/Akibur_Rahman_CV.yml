@@ -67,6 +67,12 @@ cv:
         date: '[PR #121](https://github.com/makeplane/helm-charts/pull/121)'
         highlights: 
         - Enhanced Helm chart with **nodeSelector**, **tolerations**, **affinity** across all workloads, cutting deployment time by **30%**.
+      - name: '[Asyar](https://asyar.org)'
+        date: '[PR #755](https://github.com/Xoshbin/asyar/pull/755)'
+        highlights:
+        - 'Improved file preview reliability to **100%** across **3** tested binary formats using zero dependency magic byte detection in Rust.'
+        # - 'Unified the **OS-driven preview/open chain** across **10 files**, fixing silent **open-in-default-app** failures; validated with **35+ automated tests** passing.'
+        # - '**Tools Used**: Rust, Tauri 2, objc2, Svelte 5, TypeScript'
 
       
 
@@ -88,7 +94,7 @@ cv:
         date: '[GitHub Organization](https://github.com/CSE-408-B1)'
         highlights:
           - Developed a **microservices** based **web application** using **Tesseract** to sustain processing of **150 documents/hour**.
-          - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
+          # - '**Tools Used**: JavaScript, Node.js, MongoDB, Docker, Tesseract OCR'
       # - name: Typing tool for Developers
       #   date: '[Git Repository](https://github.com/akib1689/Typing_tool)'
       #   highlights:
@@ -110,7 +116,7 @@ cv:
           - Orchestrated **15+ self hosted services** on a single server using **docker compose** reducing monthly SaaS costs by **$70+**. 
           # - Assembled a collection of opinionated **docker compose** files to run a **home lab** on a single server.
           # - Services include **Jellyfin**, **PiHole**, **Unbound**, **HomePage**, **Traefik**, **NextCloud**, **Outline**, **Wiki.js**.
-          - '**Tools Used**: Docker, Docker Compose'
+          # - '**Tools Used**: Docker, Docker Compose'
     skills:
       - label: Core Languages & Databases
         details: C, C++, Java, Python, JavaScript, Bash, MySQL, PostgreSQL, MongoDB
