@@ -41,16 +41,14 @@ cv:
           - '**Notable Coursework:** Machine Learning, Bioinformatics, Artificial Intelligence, Operating Systems, Information Systems and Design, Data Structures & Algorithms, Computer Architecture, Computer Networks'
 
     research_experience:
-      - name: 'Execution-Augmented Generation (EAG): Decoupled Reasoning and Data Access for Privacy-Preserving LLM Agents'
+      - name: 'ZeroSight: A Privacy-Preserving Harness for LLM Agents over Protected Data'
         start_date: 2026-03
         end_date: present
         highlights:
-          - 'Identified that existing agent architectures expose raw data to the LLM, creating an unnecessary attack surface, asked whether agents can reason effectively over schema-only metadata.'
-          - 'Designed and implemented EAG, a planner executor architecture where the LLM generates execution plans over schema metadata and a local executor runs them against real data with zero data token leakage.'
-          - 'Schema only reasoning matches or exceeds the accuracy of data-exposed agents across **two SQL benchmarks** and **one REST API domain benchmark**, with up to **21%** fewer tokens, while zero raw data tokens enter the model context.'
-          - 'Preparing manuscript for publication with Prof. Md. Tariqul Islam Pavel at **UMBC**.'
-
-
+          - 'Designed and implemented **ZeroSight**, an agent harness where data tools return **shape-only observations**, raw results stay in a local artifact store, and symbolic references are resolved **fail closed** by trusted middleware.'
+          - 'Proved that the model context is value free for any model behavior and tool effects stay bound to declared operators.'
+          - 'Across **4 datasets , 3 models**: reduced raw-data exposure from **25–980 tokens/task to zero**; baseline leaks store values in **43–88%** of data-tool observations, ZeroSight at most **0.3%**.'
+          - 'Spider accuracy improves for all three models (**+1.6 to +4.4 pts**); manuscript under submission to **IEEE ICC 2027** (CISS Symposium) with Prof. Md. Tariqul Islam Pavel at **UMBC**.'
 
       - name: 'A Deep Learning approach for predicting Post Traumatic Stress Disorder (PTSD) via Computer Vision & Questionnaire'
         date: 2024-05
@@ -63,6 +61,16 @@ cv:
           # - Extracted **per-frame emotion distributions** via **computer vision** and performed **time-series aggregation** and fused with empirical questionnaire responses to generate structured input features.
           - 'Demonstrated that models trained on combined **facial-expression + questionnaire** inputs outperformed **questionnaire-only** classifiers, validating the added value of **computer-vision** features in PTSD risk prediction'
     publications:
+      # - title: 'ZeroSight: A Privacy-Preserving Harness for LLM Agents over Protected Data'
+      #   authors:
+      #     - '**Akibur Rahman**'
+      #     - Faisal Haque Bappy
+      #     - Tahrim Hossain
+      #     - Raiful Hasan
+      #     - Kamrul Hasan
+      #     - Tariqul Islam
+      #   date: 2026-10
+      #   journal: 'IEEE International Conference on Communications (ICC 2027), CISS Symposium (under submission)'
       - title: 'A Multimodal Approach: Enhancing PTSD Diagnosis with AI-Powered Behavioral Analysis'
         authors:
           - Anika Monir
