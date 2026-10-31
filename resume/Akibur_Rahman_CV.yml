@@ -48,7 +48,7 @@ cv:
           - 'Designed and implemented **ZeroSight**, an agent harness where data tools return **shape-only observations**, raw results stay in a local artifact store, and symbolic references are resolved **fail closed** by trusted middleware.'
           - 'Proved that the model context is value free for any model behavior and tool effects stay bound to declared operators.'
           - 'Across **4 datasets , 3 models**: reduced raw-data exposure from **25–980 tokens/task to zero**; baseline leaks store values in **43–88%** of data-tool observations, ZeroSight at most **0.3%**.'
-          - 'Spider accuracy improves for all three models (**+1.6 to +4.4 pts**); manuscript under submission to **IEEE ICC 2027** (CISS Symposium) with Prof. Md. Tariqul Islam Pavel at **UMBC**.'
+          - 'Spider accuracy improves for all three models (**+1.6 to +4.4 pts**); paper **under review at IEEE ICC 2027** (CISS Symposium) with Prof. Md. Tariqul Islam Pavel at **UMBC**.'
 
       - name: 'A Deep Learning approach for predicting Post Traumatic Stress Disorder (PTSD) via Computer Vision & Questionnaire'
         date: 2024-05
@@ -65,12 +65,11 @@ cv:
       #   authors:
       #     - '**Akibur Rahman**'
       #     - Faisal Haque Bappy
-      #     - Tahrim Hossain
+      #     - Tarannum Shaila Zaman
       #     - Raiful Hasan
-      #     - Kamrul Hasan
       #     - Tariqul Islam
       #   date: 2026-10
-      #   journal: 'IEEE International Conference on Communications (ICC 2027), CISS Symposium (under submission)'
+      #   journal: 'IEEE International Conference on Communications (ICC 2027), CISS Symposium (under review)'
       - title: 'A Multimodal Approach: Enhancing PTSD Diagnosis with AI-Powered Behavioral Analysis'
         authors:
           - Anika Monir
